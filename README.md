@@ -1,9 +1,9 @@
+THIS IS THE IMPORTANT ONE I WROTE IT THREE TIMES SO EVERYONE DOES IT
+if not i dont think your fuel will work.
+
 Ok!! So this is what I learned from logan.
 
 1. put m1 in your cs312 in local_html
-
-THIS IS THE IMPORTANT ONE I WROTE IT THREE TIMES SO EVERYONE DOES IT
-if not i dont think your fuel will work.
 
 2. in root, copy a version of fuel into fuelSB. This is the one we will be using for the project
 
