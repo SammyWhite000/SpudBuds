@@ -12,10 +12,10 @@
     <nav>
         <ul>
             <!-- Will need to change the links for SpudBuds -->
-            <?php echo '<li><a href="../eastwest/east?direction=east.">East</a></li>' ?>
-            <?php echo '<li><a href="../eastwest/'.$direction.'">One</a></li>' ?>
-            <?php echo '<li><a href="../eastwest/'.$direction2.'">Two</a></li>' ?> 
-            <?php echo '<li><a href="../eastwest/west?direction=west.">West</a></li>' ?> 
+            <li><a href="m1/SpudBuds/fuelSB/app/views/SpudBuds/home.php">SpudBuds</a></li>
+            <li><a href="m1/SpudBuds/fuelSB/app/views/SpudBuds/bios.php">About Us</a></li>
+            <li><a href="m1/SpudBuds/fuelSB/app/views/SpudBuds/mosaic.php">Mosaic</a></li>
+            
         </ul>
     </nav>
 
