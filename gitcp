@@ -1,0 +1,5 @@
+#! /bin/bash
+cp -r local_html/m1/Spudbuds/fuelSB ~/
+cp -r local_html/m1/Spudbuds/local_html ~/
+chmod -R 755 local_html/
+chmod -R 711 fuelSB/
