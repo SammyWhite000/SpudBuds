@@ -28,7 +28,5 @@ class Controller_SpudBuds extends Controller_Template
 		$this->template->header = 'Build a Mosaic Table';
 		$this->template->contents = View::forge('spudbuds/mosaic', $data);
 	}
-
-
 }
 ?>
