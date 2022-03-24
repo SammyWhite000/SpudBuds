@@ -1,0 +1,63 @@
+/*
+color: #2C3740;  // dark greyish blue 
+color: #28594B;  // forest green - footer text color
+color: #297350;  // traditional green  - background color
+color: #F2B6A0;  // skin pink - text color
+color: #F2F2F2;  // white - Hover color
+*/
+
+main {
+    width: 800px;
+    margin-left:auto;
+    margin-right: auto;
+    background-color:  #297350; /* traditional green */
+    color: #F2B6A0; /* skin pink */
+    font-family: sans-serif;
+    /*content becomes centered if page is wider than necessary */
+}
+
+h1 {
+    color: #2C3740; /* dark greyish blue */
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color:#297350; /* traditional green */
+  }
+  
+nav li {
+    float: left;
+  }
+  
+nav li a {
+    display: block;
+    color: #F2B6A0; /* skin pink  */
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+  }
+
+nav li a:hover {
+    color:  #F2F2F2;  /* white */
+  }
+
+img {
+    width: 200px;
+    height: 300px;
+    margin-left: 250px; 
+    padding-top: 10px; /* Put some space between img and nav bar */
+}
+
+footer{
+  position: sticky;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  color: #2C3740; /* dark greyish blue */ 
+  text-align: center;
+  background-color:#F2B6A0; /* skin pink - text color */
+
+}
