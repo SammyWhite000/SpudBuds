@@ -12,9 +12,9 @@
     <nav>
         <ul>
             <!-- Will need to change the links for SpudBuds -->
-            <li><a href="https://cs.colostate.edu:4444/~jonquill/m1/fuelviews/index.php/spudbuds/index.php">SpudBuds</a></li>
-            <li><a href="https://cs.colostate.edu:4444/~jonquill/m1/fuelviews/index.php/spudbuds/bios.php">About Us</a></li>
-            <li><a href="https://cs.colostate.edu:4444/~jonquill/m1/fuelviews/index.php/spudbuds/mosaic.php">Mosaic</a></li>
+            <li><a href="SpudBuds/fuelSB/app/views/spudbuds/index.php">SpudBuds</a></li>
+            <li><a href="SpudBuds/fuelSB/app/views/spudbuds/bios.php">About Us</a></li>
+            <li><a href="SpudBuds/fuelSB/app/views/spudbuds/mosaic.php">Mosaic</a></li>
             
         </ul>
     </nav>
