@@ -13,7 +13,7 @@
 <body>
     <nav>
         <ul>
-            <!-- Will need to change the links for SpudBuds -->
+            <!-- Will need to change the links for SpudBuds https://www.w3resource.com/javascript-exercises/javascript-dom-exercise-7.php -->
             <li><a href="index.php">SpudBuds</a></li>
             <li><a href="bios.php">About Us</a></li>
             <li><a href="mosaic.php">Mosaic</a></li>
