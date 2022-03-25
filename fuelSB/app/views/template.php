@@ -12,7 +12,7 @@
     <nav>
         <ul>
             <!-- Will need to change the links for SpudBuds -->
-            <li><a href="SpudBuds/fuelSB/app/views/spudbuds/index.php">SpudBuds</a></li>
+            <li><a href="index.php">SpudBuds</a></li>
             <li><a href="SpudBuds/fuelSB/app/views/spudbuds/bios.php">About Us</a></li>
             <li><a href="SpudBuds/fuelSB/app/views/spudbuds/mosaic.php">Mosaic</a></li>
             
