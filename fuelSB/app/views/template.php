@@ -6,6 +6,8 @@
     <meta name="keywords" content="HTML5, Homepage"></meta>
     <meta name="description" content="Fuel Template"></meta>
     <style type="text/css"></style>
+
+    <?php echo Assett::css($css) ?>
     <title> <?php echo $title ?>  </title>
 </head>
 <body>
