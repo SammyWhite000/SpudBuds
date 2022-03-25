@@ -7,7 +7,6 @@
     <meta name="description" content="Fuel Template"></meta>
     <style type="text/css"></style>
     
-    <?php echo Asset::css($css) ?>
 
     <title> <?php echo $title ?>  </title>
 </head>
@@ -18,10 +17,7 @@
             <li><a href="bios.php">SpudBuds</a></li>
             <li><a href="m1/SpudBuds/fuelSB/app/views/SpudBuds/bios.php">About Us</a></li>
             <li><a href="m1/SpudBuds/fuelSB/app/views/SpudBuds/mosaic.php">Mosaic</a></li>
-            <li><a href="https://cs.colostate.edu:4444/~jonquill/m1/fuelviews/index.php/spudbuds/index.php">SpudBuds</a></li>
-            <li><a href="https://cs.colostate.edu:4444/~jonquill/m1/fuelviews/index.php/spudbuds/bios.php">About Us</a></li>
-            <li><a href="https://cs.colostate.edu:4444/~jonquill/m1/fuelviews/index.php/spudbuds/mosaic.php">Mosaic</a></li>
-            
+           
         </ul>
     </nav>
 
