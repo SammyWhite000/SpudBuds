@@ -7,16 +7,16 @@
     <meta name="description" content="Fuel Template"></meta>
     <style type="text/css"></style>
     
-
+    <?php echo Asset::css("spudbuds.css") ?>
     <title> <?php echo $title ?>  </title>
 </head>
 <body>
     <nav>
         <ul>
             <!-- Will need to change the links for SpudBuds -->
-            <li><a href="bios.php">SpudBuds</a></li>
-            <li><a href="m1/SpudBuds/fuelSB/app/views/SpudBuds/bios.php">About Us</a></li>
-            <li><a href="m1/SpudBuds/fuelSB/app/views/SpudBuds/mosaic.php">Mosaic</a></li>
+            <li><a href="index.php">SpudBuds</a></li>
+            <li><a href="bios.php">About Us</a></li>
+            <li><a href="mosaic.php">Mosaic</a></li>
            
         </ul>
     </nav>
