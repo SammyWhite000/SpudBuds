@@ -1,4 +1,4 @@
-
+https://www.cs.colostate.edu:4444/~EID/SpudBuds/local_html/cs312/m1/index.php/spudbuds/bios.php
 # SpudBuds - Milestone 1
 
 ## Pages
