@@ -22,6 +22,15 @@
         </p>
 
     <h2> Ellery Osborne</h2>
+        <p> <?php echo Asset::img("ellery.jpg");?></p> 
+        <p>
+            <ul>
+                <li>Third Year Student</li>
+                <li>Favorite Color is Slate Blue</li>
+                <li>My favorite TV Show will always be Grey's Anatomy</li>
+            </ul>
+        </p>
+
 
     <h2> Thad Avery</h2>
 
