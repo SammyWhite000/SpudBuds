@@ -12,6 +12,14 @@
             </ul>
         </p>
     <h2> Sam White</h2>
+        <p> <?php echo Asset::img("sammy.jpg");?></p> 
+        <p>
+            <ul>
+                <li>Second Year Computer Science Major</li>
+                <li>Favorite Color is Dark Gray</li>
+                <li>My favorite TV Show is currently Formula One: Drive to survive</li>
+            </ul>
+        </p>
 
     <h2> Ellery Osborne</h2>
 
