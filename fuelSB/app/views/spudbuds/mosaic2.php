@@ -15,6 +15,10 @@
 
 </form>
 
+
+
+
+
 <div class="table2">
 <?php
 
@@ -34,7 +38,7 @@
         }
         else{
             $boolNum = FALSE;
-            echo "you fucked up";
+            echo "Invalid number parameters <br>";
         }  
     }
 
@@ -46,7 +50,7 @@
         }
         else{
         $boolColor = FALSE;
-        echo "<br>testing color should be blahhhh given: ", $color;
+        echo "Invalid color parameters";
         }
         
     }
@@ -57,9 +61,10 @@
         //Sammy's nice code for first table
         echo "<table style=\"width:100%\"border =\"1px\" >";
         $flag = false;
-        for($x=0; $x <= $color; $x++){
+        for($x=0; $x < $color; $x++){
             echo "<tr>";
-            echo "<td style=\"width:20%\">; 
+            //took out extra semicolon
+            echo "<td style=\"width:20%\"> 
             <select name=\"flagcolors\">
                 <option value=\"red\">Red</option>
                 <option value=\"orange\">Orange</option>
@@ -111,9 +116,37 @@
             echo"</div>";
 
     }
-    
+
+
+    //This is a sample of what I was going to do for changing the colors of the td
+    // the basic idea of how to store the item selected in the drop down.
+
+        // echo "
+        // <form action=\"mosaic2.php\" method=\"POST\">
+        
+        //     <select name=\"topic_name\">
+        //         <option>Topic 1</option>
+        //         <option>Topic 2</option>
+        //         <option>Topic 3</option>
+        //     </select>
+        //     <input type=\"submit\" value=\"submit\">
+        // </form>";
+
+        // if(isset($_POST['topic_name'])){
+        //     echo $_POST["topic_name"];
+        //     }
+            
+
+
 
 ?>
+
+
+
+
 <div>
+
+
+
 
 <html>
