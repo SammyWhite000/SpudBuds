@@ -21,17 +21,6 @@
 
 
 
-    echo "<table border =\"1px\" >";
-    for($x=0; $x <= 5; $x++){
-        echo "<tr>";
-
-        for($y=0; $y< 2; $y++){
-            echo "<td> Fuck </td>";
-        }
-        echo"</tr>";
-    }
-    
-    echo"</table>";
 
 
 
@@ -39,7 +28,19 @@
         $number = $_GET['number'];
         if($number >= 1 && $number <=26){
             echo "testing number should be whatever I give and submit: " , $number, "<br>";
-
+            
+            echo "<table border =\"1px\" >";
+            for($x=0; $x <= 5; $x++){
+                echo "<tr>";
+        
+                for($y=0; $y< 2; $y++){
+                    echo "<td> Fuck </td>";
+                }
+                echo"</tr>";
+            }
+            
+            echo"</table>";
+        
 
 
             
