@@ -33,5 +33,14 @@
 
 
     <h2> Thad Avery</h2>
-
+    <p><?php echo Asset::img("thad.jpg");?></p>
+        <p>
+            <ul>
+                <li>Junior in Computer Science</li>
+                <li>Recieved participation at the science fair when I was 5</li>
+                <li>My favorite movie is Grown Ups</li>
+                <li>Have mullet</li>
+            </ul>
+        </p>
+    
 </main>
