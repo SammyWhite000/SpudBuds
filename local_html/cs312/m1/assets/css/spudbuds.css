@@ -6,50 +6,68 @@ color: #F2B6A0;  // skin pink - text color
 color: #F2F2F2;  // white - Hover color
 */
 
-nav ul {
+/* Bounsweet #761
+color: #D96C89 // light pink
+color: #BF5687 // dark pink
+color: #9FBF7E // light green
+color: #798C65 // dark green
+color: #D0D9D8 // white
+*/
+
+/* Stoutland #508
+color: #4C5759 // grey - background of nav and main
+color: #F2D7B6 // very soft orange - text color
+color: #F2E8DC // light greyish orange
+color: #A6998F // light brown - not 
+color: #8C6046 // brown - hover color
+*/
+
+nav ul { /* background of nav */
   list-style-type: none;
   margin: 0;
   padding: 0;
   overflow: hidden;
-  background-color:#297350; /* traditional green */
+  background-color:    #4C5759      /* #297350;  traditional green */
 }
 
-nav li {
+nav li { /* No Color */
   float: left;
 }
 
-nav li a {
+nav li a { /* text color of links */
   display: block;
-  color: #F2B6A0; /* skin pink  */
+  color: #F2D7B6 ; /* #F2B6A0;  skin pink  */
   text-align: center;
   padding: 14px 16px;
   text-decoration: none;
 }
 
-nav li a:hover {
-  color:  #F2F2F2;  /* white */
+nav li a:hover { /* text color of hover */
+  color:  #8C6046 ;/* #F2F2F2;   white */
 }
 
-h1 {
-  color: #2C3740; /* dark greyish blue */
+h1 { /* text color of headings */
+  color: #F2E8DC  /* #2C3740; /* dark greyish blue */
 }
 
 body {
-  background-color: #fffdd0 ; /*#fffff0*/
+  background-color: #A6998F; /* #fffdd0 ;  */
 }
 
-main {
+main { /* background color and text color */
     width: 1000px;
     margin-left:auto;
     margin-right: auto;
-    background-color:  #297350; /* traditional green */
-    color: #F2B6A0; /* skin pink */
+    background-color: #4C5759;/* #297350; traditional green */
+    color: #F2D7B6 ;/* #F2B6A0;  skin pink */
     font-family: sans-serif;
     margin-bottom: 50px; /*for the footer not to cover content */
-    /*content becomes centered if page is wider than necessary */
 }
 
-img {
+img { /* No Color */
+    /*
+    width: 200px;
+    */
     width: auto;
     height: 300px;
     margin-left: auto;
@@ -64,8 +82,7 @@ footer{
   bottom: 0;
   width: 100%;
   height: 50px; /*Needs to match margin-bottom in main */
-  color: #2C3740; /* dark greyish blue */ 
+  color: #F2D7B6 ;/* #2C3740;  dark greyish blue */ 
   text-align: center;
-  background-color:#F2B6A0; /* skin pink - text color */
-
+  background-color: #4C5759;/* #F2B6A0; /* skin pink - text color */
 }
