@@ -69,3 +69,12 @@ footer{
   background-color:#F2B6A0; /* skin pink - text color */
 
 }
+
+#logo {
+  width: auto;
+  height: 300px;
+  margin-left: auto;
+  margin-right: auto; 
+  display: block;
+  padding-top: 10px;
+}

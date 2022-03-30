@@ -1,5 +1,6 @@
 <main>
     <h2> Group 14 </h2>
+    <p id=logo> <?php echo Asset::img("spud.jpg");?> </p>
     <p>You will create a web page for a fictitious company, including a name and logo.  You must have a homepage with a modern design 
         that includes basic welcome information and contains useful links to get to the other pages on the site.  
     </p>
