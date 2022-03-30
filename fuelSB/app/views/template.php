@@ -21,9 +21,9 @@
         </ul>
     </nav>
 
+    <div id=logo> <?php echo Asset::img("spud.jpg");?> </div>
     <header>
        <h1> <?php echo $header; ?> </h1>
-       <p id=logo> <?php echo Asset::img("spud.png");?> </p>
     </header>
 
     <?php echo $contents; ?> 
