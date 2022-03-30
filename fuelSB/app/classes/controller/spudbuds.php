@@ -28,10 +28,15 @@ class Controller_SpudBuds extends Controller_Template
 		$this->template->header = 'Build a Mosaic Table';
 		$this->template->contents = View::forge('spudbuds/mosaic', $data);
 
-
-
-
-
 	}
+
+	public function action_mosaic2()
+	{
+		$data = array();
+		$this->template->css = 'spudbuds.css';
+		$this->template->title = 'Mosaic ';
+		$this->template->header = 'Build a Mosaic 2 Table';
+		$this->template->contents = View::forge('spudbuds/mosaic2', $data);
+	}	
 }
 ?>
