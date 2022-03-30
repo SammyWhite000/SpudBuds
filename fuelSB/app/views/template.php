@@ -7,7 +7,7 @@
     <meta name="description" content="Fuel Template"></meta>
     <style type="text/css"></style>
     
-    <?php echo Asset::css("spudbuds.css") ?>
+    <?php echo Asset::css($css) ?>
     <title> <?php echo $title ?>  </title>
 </head>
 <body>
