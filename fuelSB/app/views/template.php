@@ -17,7 +17,7 @@
             <li><a href="index.php">SpudBuds</a></li>
             <li><a href="bios.php">About Us</a></li>
             <li><a href="mosaic.php">Mosaic</a></li>
-           
+            <li><a href="mosaic2.php">Mosaic2</a></li> 
         </ul>
     </nav>
 
