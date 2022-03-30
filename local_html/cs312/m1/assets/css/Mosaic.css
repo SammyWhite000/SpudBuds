@@ -86,8 +86,16 @@ nav ul {
      max-height:2px;
      width: auto;
      height: auto;
-     float: left;
+     float: right;
      object-fit: contain;
    }
    
+   #table1 {
+     background-color: white;
+     
+     /*Separate table1 from table2 */
+     margin-top: 10px; 
+     margin-bottom: 10px;
+     
+   }
   

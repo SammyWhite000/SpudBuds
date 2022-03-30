@@ -1,5 +1,5 @@
 <main>
-    <div class="box1">
+    <div id=jon>
     <h2> Jonquill Howlett</h2>
         <p> <?php echo Asset::img("bio_pic.jpg");?> </p>
         <p> 
@@ -11,7 +11,7 @@
         </p>
     </div>
 
-
+    <div id=sam>
     <h2> Sam White</h2>
         <p> <?php echo Asset::img("sammy.jpg");?></p> 
         <p>
@@ -21,7 +21,8 @@
                 <li>My favorite TV Show is currently Formula One: Drive to survive</li>
             </ul>
         </p>
-
+    </div>
+    <div id=ellery>
     <h2> Ellery Osborne</h2>
         <p> <?php echo Asset::img("ellery.jpg");?></p> 
         <p>
@@ -31,8 +32,9 @@
                 <li>My favorite TV Show will always be Grey's Anatomy</li>
             </ul>
         </p>
+    </div>
 
-
+    <div id=thad>
     <h2> Thad Avery</h2>
     <p><?php echo Asset::img("thad.jpg");?></p>
         <p>
@@ -43,5 +45,5 @@
                 <li>Have mullet</li>
             </ul>
         </p>
-    
+    </div>
 </main>

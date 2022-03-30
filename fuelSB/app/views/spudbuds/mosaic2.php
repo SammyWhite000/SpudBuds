@@ -47,8 +47,8 @@
 
     //Only if both variables have values, start generating tables
     if($boolColor == TRUE && $boolNum==TRUE){
-        
-        echo "<div class=\"table1\">";
+        //Start of div "<div id=\"table1\">"
+        echo "<div id=\"table1\">";
         //Sammy's nice code for first table
         echo "<table style=\"width:100%\"border =\"1px\" >";
         $flag = false;
@@ -70,10 +70,12 @@
             echo"</tr>";
         }
         echo"</table>";
-        echo"</div>";
+        echo"</div>"; //End of div id="table1
+       
 ?>
 <?php
-        echo "<div class=\"table2\">";
+       
+        echo "<div id=\"table2\">";
         //Thad's jank ass code for table2
             echo "<table border =\"1px\" style=\"width:100%\">";
             echo"<tr>";
@@ -101,7 +103,7 @@
             }
             
             echo"</table>";
-            echo"</div>";
+            echo"</div>"; // End of "<div id=\"table2\">";
     }
     //This is a sample of what I was going to do for changing the colors of the td
     // the basic idea of how to store the item selected in the drop down.
