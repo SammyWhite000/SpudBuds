@@ -18,45 +18,25 @@
 <div class="table2">
 <?php
 
-
     $colors = array("red", "orange", "yellow", "green", "blue", "purple", "grey", "brown", "black", "teal");
 
     $boolNum = FALSE;
     $boolColor = FALSE;
 
 
-    $number;
+    $number = 0;
+    $color = 0;
 
     if(isset($_GET['number'])){
         $number = $_GET['number'];
         if($number >= 1 && $number <=26){
             $boolNum = TRUE;
-            // echo "testing number should be whatever I give and submit: " , $number, "<br>";
-            
-            // echo "<table border =\"1px\" >";
-            // for($x=0; $x <= 5; $x++){
-            //     echo "<tr>";
-        
-            //     for($y=0; $y< 2; $y++){
-            //         echo "<td> Fuck </td>";
-            //     }
-            //     echo"</tr>";
-            // }
-            
-            // echo"</table>";
-         
         }
         else{
             $boolNum = FALSE;
             echo "you fucked up";
-        }
-
-        
+        }  
     }
-    echo "number", $number;
-    
-
-    
 
     if(isset($_GET['color'])){
         $color = $_GET['color'];
@@ -70,14 +50,35 @@
         }
         
     }
-    echo "color", $color;
-    
 
+    if($boolColor == TRUE && $boolNum==TRUE){
+        
+        echo "<div class=\"table1\">";
+        //Sammy's nice code for first table
+        echo "<table style=\"width:100%\"border =\"1px\" >";
+        $flag = false;
+        for($x=0; $x <= $color; $x++){
+            echo "<tr>";
+            echo "<td style=\"width:20%\">; 
+            <select name=\"flagcolors\">
+                <option value=\"red\">Red</option>
+                <option value=\"orange\">Orange</option>
+                <option value=\"yellow\">Yellow</option>
+                <option value=\"green\">Green</option>
+                <option value=\"blue\">Blue</option>
+                <option value=\"purple\">Purple</option>
+                <option value=\"grey\">Grey</option>
+                <option value=\"teal\">Teal</option>
+            </select>
+            </td>";
+            echo "<td style=\"width:80%\"> Bitch </td>";
+            echo"</tr>";
+        }
+        echo"</table>";
+        echo"</div>";
 
-    
-            
-            
-
+        echo "<div class=\"table2\" style=\"margin-top:60px\">";
+        //Thad's jank ass code for table2
             echo "<table border =\"1px\" style=\"width:100%\">";
             
             echo"<tr>";
@@ -107,16 +108,9 @@
             }
             
             echo"</table>";
-        
+            echo"</div>";
 
-
-
-
-
-
-
-    
-    
+    }
     
 
 ?>
