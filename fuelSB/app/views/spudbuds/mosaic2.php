@@ -5,9 +5,9 @@
 
 
     <label for="number">Number Rows/Cols</label>
-    <input type="text" name = 'number' id="number"><br>
+    <input type="text" name = 'number' id="number" required><br>
     <label for="color">Color</label>
-    <input type="text" name = 'color' id = 'color'><br>
+    <input type="text" name = 'color' id = 'color' required><br>
 
     <input type="submit" value="Submit">
    
@@ -38,7 +38,7 @@
         }
         else{
             $boolNum = FALSE;
-            echo "Invalid number parameters <br>";
+            echo "Invalid number parameters. Must be in range 1-26<br>";
         }  
     }
 
@@ -50,7 +50,7 @@
         }
         else{
         $boolColor = FALSE;
-        echo "Invalid color parameters";
+        echo "Invalid color parameters. Must be in range 1-10";
         }
         
     }
@@ -76,7 +76,7 @@
                 <option value=\"teal\">Teal</option>
             </select>
             </td>";
-            echo "<td style=\"width:80%\"> Bitch </td>";
+            echo "<td style=\"width:80%\"> na </td>";
             echo"</tr>";
         }
         echo"</table>";
