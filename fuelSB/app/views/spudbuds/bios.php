@@ -33,5 +33,13 @@
 
 
     <h2> Thad Avery</h2>
-
+    <p>
+            <ul>
+                <li>Test</li>
+                <li>Test</li>
+                <li>Test</li>
+            </ul>
+        </p>
+        <p>You must also have an "about" page where you list the names and a brief biography of each group member.  
+            A picture or graphic avatar is required for each member of your team. </p>
 </main>
