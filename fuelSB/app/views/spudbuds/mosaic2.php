@@ -122,5 +122,7 @@
         // if(isset($_POST['topic_name'])){
         //     echo $_POST["topic_name"];
         //     }
+
+        echo"<button onClick=\"window.print()\">Print this page</button>";
 ?>
 <html>
