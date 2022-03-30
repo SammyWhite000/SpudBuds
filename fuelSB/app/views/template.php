@@ -25,9 +25,7 @@
        <h1> <?php echo $header; ?> </h1>
     </header>
 
-    <main> 
-        <?php echo $contents; ?> 
-    </main>
+    <?php echo $contents; ?> 
     
     <footer>
          <p>CS312 Spring 2022 | SpudBuds | Group 14 </p>

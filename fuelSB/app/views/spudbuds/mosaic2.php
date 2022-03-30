@@ -66,6 +66,7 @@
             //took out extra semicolon
             echo "<td style=\"width:20%\"> 
             <select name=\"flagcolors\">
+                <option value=\"blank\"></option>
                 <option value=\"red\">Red</option>
                 <option value=\"orange\">Orange</option>
                 <option value=\"yellow\">Yellow</option>
