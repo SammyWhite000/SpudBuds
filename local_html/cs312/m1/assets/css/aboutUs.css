@@ -51,7 +51,7 @@ nav ul {
   
   img {
       width: auto;
-      height: 300px;
+      height: 100px;
       margin-left: auto;
       margin-right: auto; 
       display: block;
@@ -71,14 +71,14 @@ nav ul {
   }
 
   /*Broken at the moment */
-  #logo {
 
-
-     
-      margin-left: auto;
-      margin-right: auto;
-     
-
-
-   }
+   
+   #jon img, #sam img, #ellery img , #thad img {
+    width: auto;
+    height: 300px;
+    margin-left: auto;
+    margin-right: auto; 
+    display: block;
+    padding-top: 10px; /* Put some space between img and nav bar */
+}
    

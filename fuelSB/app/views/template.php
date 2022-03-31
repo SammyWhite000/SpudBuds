@@ -20,7 +20,6 @@
         </ul>
     </nav>
 
-
     <div id="logo">
        <?php echo Asset::img("spudbudstransparent.png"); ?>
     </div>

@@ -51,13 +51,12 @@ main {
 }
 
 img {
-    width: auto;
-    height: 300px;
-    margin-left: auto;
-    margin-right: auto; 
-    display: block;
-    padding-top: 10px; /* Put some space between img and nav bar */
-
+  width: auto;
+  height: 100px;
+  margin-left: auto;
+  margin-right: auto; 
+  display: block;
+  padding-top: 10px; /* Put some space between img and nav bar */
 }
 
 footer{
@@ -70,12 +69,6 @@ footer{
   color: #2C3740; /* dark greyish blue */ 
   text-align: center;
   background-color:#F2B6A0; /* skin pink - text color */
-}
-
-/* Broken at the moment */
-#logo {
-  margin-left: auto;
-  margin-right: auto;
 }
 
 
