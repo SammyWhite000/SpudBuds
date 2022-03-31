@@ -12,6 +12,7 @@
 <?php
 //Table two
 
+    $colorU = array("red", "orange", "yellow", "green", "blue", "purple", "grey", "brown", "black", "teal");
     $colors = array("Red", "Orange", "Yellow", "Green", "Blue", "Purple", "Grey", "Brown", "Black", "Teal");
     //Boolean values to check if both values are updated/have a value
     $boolNum = FALSE;
@@ -57,13 +58,13 @@
             echo "<tr>";
             //Start of Drop Down menu: First Item is blank 
             echo "<td style=\"width:20%\"> 
-            <select name=\"flagcolors\">
-                <option value=\"blank\"></option>";
+            <select class=\"flag\">
+                <option class=\"blank\"></option>";
                 //Loop through Colors arrays and make option in menu
                 foreach($colors as $colorVals){
-                   echo "<option id=\"$colorVals\">$colorVals</option>";
+                   echo "<option style=\"background-color:$colorVals\" class=\"$colorVals\">$colorVals</option>";
                 }
-            //End of optsion 
+            //End of drop down menu 
             echo "</select>
             </td>";
             echo "<td style=\"width:80%\"> na </td>";
@@ -71,8 +72,17 @@
         }
         echo"</table>";
         echo"</div>"; //End of div id="table1
-       
+//Javascript that will look for event change  
 ?>
+<script>
+    console.log("REE");
+    let colorOption1 = document.querySelector(".flag");
+    colorOption1.addEventListener("change", getValue());
+    function getValue(){
+        let value = colorOption1.value;
+        console.log("Value: " + value);
+    }
+</script>
 <?php
        
         echo "<div id=\"table2\">";
