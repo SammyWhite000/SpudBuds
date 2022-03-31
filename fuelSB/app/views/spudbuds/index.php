@@ -5,5 +5,6 @@
     </p>
 
     <p> SpudBuds collaborated during the Spring 2022 semester for color coordinate generation.</p>
-    <p> Color Coordinate generation is a fancy way of saying that we will be essentially  a mosiac. </p>
+    <p> Color Coordinate generation is a fancy way of saying that we will be essentially be building
+        a mosiac based on user input for size and the colors that will be used. </p>
 </main>

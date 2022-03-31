@@ -7,7 +7,7 @@ class Controller_SpudBuds extends Controller_Template
 		$data = array();
 		$this->template->css = 'spudbuds.css';
 		$this->template->title = 'Home Page';
-		$this->template->header = 'SpudBuds';
+		$this->template->header = 'Home';
 		$this->template->contents = View::forge('spudbuds/index', $data);
 	}
 

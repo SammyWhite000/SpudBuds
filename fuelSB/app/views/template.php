@@ -17,13 +17,15 @@
             <li><a href="index.php">SpudBuds</a></li>
             <li><a href="bios.php">About Us</a></li>
             <li><a href="mosaic2.php">Mosaic</a></li>
-            
         </ul>
     </nav>
 
-    <div id="logo"> <?php echo Asset::img("spud.jpg");?> </div>
+    <div id="logo">
+       <?php echo Asset::img("spudbudstransparent.png"); ?>
+    </div>
+
     <header>
-       <h1> <?php echo $header; ?> </h1>
+       <h1> <?php echo $header; ?>  </h1>
     </header>
 
     <?php echo $contents; ?> 

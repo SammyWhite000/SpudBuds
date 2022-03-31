@@ -49,9 +49,9 @@ nav ul {
       /*content becomes centered if page is wider than necessary */
   }
   
-  img {
+  #logo img {
       width: auto;
-      height: 300px;
+      height: 100px;
       margin-left: auto;
       margin-right: auto; 
       display: block;
@@ -71,22 +71,14 @@ nav ul {
   }
 
   /*Broken at the moment */
-  #logo {
-    /* max-height: 5px;
-    
-     max-width: 5px;
-     display: block;
-     margin-left: auto;
-     margin-right: auto; 
-     object-fit: scale-down;
-     padding-top: 10px; */
+
    
-     display: block;
-     max-width:2px;
-     max-height:2px;
-     width: auto;
-     height: auto;
-     float: left;
-     object-fit: contain;
-   }
+   #jon img, #sam img, #ellery img , #thad img {
+    width: auto;
+    height: 300px;
+    margin-left: auto;
+    margin-right: auto; 
+    display: block;
+    padding-top: 10px; /* Put some space between img and nav bar */
+}
    
