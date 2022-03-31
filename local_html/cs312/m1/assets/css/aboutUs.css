@@ -72,21 +72,13 @@ nav ul {
 
   /*Broken at the moment */
   #logo {
-    /* max-height: 5px;
-    
-     max-width: 5px;
-     display: block;
-     margin-left: auto;
-     margin-right: auto; 
-     object-fit: scale-down;
-     padding-top: 10px; */
-   
-     display: block;
-     max-width:2px;
-     max-height:2px;
-     width: auto;
-     height: auto;
-     float: left;
-     object-fit: contain;
+
+
+     
+      margin-left: auto;
+      margin-right: auto;
+     
+
+
    }
    
