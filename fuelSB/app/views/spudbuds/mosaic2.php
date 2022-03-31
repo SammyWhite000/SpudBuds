@@ -58,11 +58,11 @@
             echo "<tr>";
             //Start of Drop Down menu: First Item is blank 
             echo "<td style=\"width:20%\"> 
-            <select class=\"flag\">
+            <select id=\"flag\" value=\"$x\" onchange=\"updateFunc($x)\">
                 <option class=\"blank\"></option>";
                 //Loop through Colors arrays and make option in menu
                 foreach($colors as $colorVals){
-                   echo "<option style=\"background-color:$colorVals\" class=\"$colorVals\">$colorVals</option>";
+                   echo "<option style=\"background-color:$colorVals\" id=\"$colorVals\" value=\"$colorVals\">$colorVals</option>";
                 }
             //End of drop down menu 
             echo "</select>
@@ -76,15 +76,14 @@
 ?>
 <script>
     console.log("REE");
-    let colorOption1 = document.querySelector(".flag");
-    colorOption1.addEventListener("change", getValue());
-    function getValue(){
-        let value = colorOption1.value;
-        console.log("Value: " + value);
+    let colorOption1 = document.querySelectorAll("#flag");
+    function updateFunc(x){
+        console.log("Test");
+        console.log(x);
+        console.log(colorOption1[x].id);
     }
 </script>
 <?php
-       
         echo "<div id=\"table2\">";
         //Thad's jank ass code for table2
             echo "<table border =\"1px\" style=\"width:100%\">";
