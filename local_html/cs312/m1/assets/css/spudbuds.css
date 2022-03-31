@@ -50,7 +50,7 @@ main {
     /*content becomes centered if page is wider than necessary */
 }
 
-img {
+#logo img {
   width: auto;
   height: 100px;
   margin-left: auto;
