@@ -58,8 +58,8 @@
             echo "<tr>";
             //Start of Drop Down menu: First Item is blank 
             echo "<td style=\"width:20%\"> 
-            <select id=\"flag\" value=\"$x\" onchange=\"updateFunc($x)\">
-                <option class=\"blank\"></option>";
+            <select id=\"$x\" onchange=\"updateFunc($x)\">
+                <option id=\"blank\"></option>";
                 //Loop through Colors arrays and make option in menu
                 foreach($colors as $colorVals){
                    echo "<option style=\"background-color:$colorVals\" id=\"$colorVals\" value=\"$colorVals\">$colorVals</option>";
@@ -75,12 +75,37 @@
 //Javascript that will look for event change  
 ?>
 <script>
-    console.log("REE");
-    let colorOption1 = document.querySelectorAll("#flag");
+    //Array to hold currently selected colors
+    let currentColors = [10];
+
+    //check if color is present in array, return true if it is
+    function checkColors(x){
+        for(let i = 0; i < 10; i++){
+            if(currentColors[i] == x){
+                return true;
+            }
+        }
+        //Return false otherwise
+        return false;
+    }
     function updateFunc(x){
-        console.log("Test");
-        console.log(x);
-        console.log(colorOption1[x].id);
+        //Get the current element by ID
+        let thing = document.getElementById(x);
+        //Add a style to it once it is selected
+        thing.style.backgroundColor = thing.value;
+        //Check if Color is already selected, if true
+        //set back to blank and display alert
+        if(checkColors(thing.value)){
+            thing.value = document.getElementById(".blank"); 
+            thing.style.backgroundColor = "";
+            alert("Cannot Select this Color: It is already Used");
+        }
+        //if not, add to array
+        else{
+            currentColors[x] = thing.value;
+        }
+        //Display Color for debugging purposes
+        console.log(thing.value);
     }
 </script>
 <?php
@@ -114,24 +139,6 @@
             echo"</table>";
             echo"</div>"; // End of "<div id=\"table2\">";
     }
-    //This is a sample of what I was going to do for changing the colors of the td
-    // the basic idea of how to store the item selected in the drop down.
-
-        // echo "
-        // <form action=\"mosaic2.php\" method=\"POST\">
-        
-        //     <select name=\"topic_name\">
-        //         <option>Topic 1</option>
-        //         <option>Topic 2</option>
-        //         <option>Topic 3</option>
-        //     </select>
-        //     <input type=\"submit\" value=\"submit\">
-        // </form>";
-
-        // if(isset($_POST['topic_name'])){
-        //     echo $_POST["topic_name"];
-        //     }
-
-        echo"<button onClick=\"window.print()\">Print this page</button>";
+    echo"<button onClick=\"window.print()\">Print this page</button>";
 ?>
 <html>
