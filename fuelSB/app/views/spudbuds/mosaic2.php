@@ -58,7 +58,7 @@
             echo "<tr>";
             //Start of Drop Down menu: First Item is blank 
             echo "<td style=\"width:20%\"> 
-            <select id=\"flag\" value=\"$x\" onchange=\"updateFunc($x)\">
+            <select id=\"$x\" value=\"$x\" onchange=\"updateFunc($x)\">
                 <option class=\"blank\"></option>";
                 //Loop through Colors arrays and make option in menu
                 foreach($colors as $colorVals){
@@ -76,11 +76,14 @@
 ?>
 <script>
     console.log("REE");
-    let colorOption1 = document.querySelectorAll("#flag");
+
+    //let colorOption1 = document.querySelectorAll("#menu");
     function updateFunc(x){
-        console.log("Test");
-        console.log(x);
-        console.log(colorOption1[x].id);
+        let colorOption1 = document.querySelectorAll("#"+x);
+        console.log(colorOption1);
+        //colorOption1[x].addEventListener("change", null);
+        //console.log(x);
+        //console.log(colorOption1[x].id);
     }
 </script>
 <?php
