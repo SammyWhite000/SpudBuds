@@ -32,6 +32,7 @@ nav li a:hover {
 
 h1 {
   color: #2C3740; /* dark greyish blue */
+  
 }
 
 body {
@@ -42,20 +43,20 @@ main {
     width: 1000px;
     margin-left:auto;
     margin-right: auto;
-    background-color: #4C5759;/* #297350; traditional green */
-    color: #F2D7B6 ;/* #F2B6A0;  skin pink */
+    background-color:  #297350; /* traditional green */
+    color: #F2B6A0; /* skin pink */
     font-family: sans-serif;
     margin-bottom: 50px; /*for the footer not to cover content */
     /*content becomes centered if page is wider than necessary */
 }
 
-img {
-    width: auto;
-    height: 300px;
-    margin-left: auto;
-    margin-right: auto; 
-    display: block;
-    padding-top: 10px; /* Put some space between img and nav bar */
+#logo img {
+  width: auto;
+  height: 100px;
+  margin-left: auto;
+  margin-right: auto; 
+  display: block;
+  padding-top: 10px; /* Put some space between img and nav bar */
 }
 
 footer{
@@ -63,9 +64,12 @@ footer{
   left: 0;
   bottom: 0;
   width: 100%;
+  
   height: 50px; /*Needs to match margin-bottom in main */
   color: #2C3740; /* dark greyish blue */ 
   text-align: center;
-  background-color: #4C5759;/* #F2B6A0; /* skin pink - text color */
-
+  background-color:#F2B6A0; /* skin pink - text color */
 }
+
+
+
