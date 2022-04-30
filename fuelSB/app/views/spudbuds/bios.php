@@ -22,11 +22,9 @@
                 <li>Favorite Color is Purple </li>
                 <li>Favorite TV Show is currently Criminal Minds</li>
             </ul>
-<<<<<<< HEAD
         </p></td>
     <td></td>
     <td><p>
-=======
         </p>
     </div>
 
@@ -34,13 +32,11 @@
     <h2> Sam White</h2>
         <p> <?php echo Asset::img("sammy.jpg");?></p> 
         <p>
->>>>>>> 851d54679240110f4db258c5cc6aa6f21ca88850
             <ul>
                 <li>Second Year Computer Science Major</li>
                 <li>Favorite Color is Dark Gray</li>
                 <li>My favorite TV Show is currently Formula One: Drive to survive</li>
             </ul>
-<<<<<<< HEAD
         </p></td>
   </tr>
   <tr>
@@ -60,24 +56,20 @@
   </tr>
   <tr>
     <td><p>
-=======
         </p>
     </div>
     <div id=ellery>
     <h2> Ellery Osborne</h2>
         <p> <?php echo Asset::img("ellery.jpg");?></p> 
         <p>
->>>>>>> 851d54679240110f4db258c5cc6aa6f21ca88850
             <ul>
                 <li>Third Year Student</li>
                 <li>Favorite Color is Slate Blue</li>
                 <li>My favorite TV Show will always be Grey's Anatomy</li>
             </ul>
-<<<<<<< HEAD
         </p></td>
     <td></td>
     <td><p>
-=======
         </p>
     </div>
 
@@ -85,20 +77,16 @@
     <h2> Thad Avery</h2>
     <p><?php echo Asset::img("thad.jpg");?></p>
         <p>
->>>>>>> 851d54679240110f4db258c5cc6aa6f21ca88850
             <ul>
                 <li>Junior in Computer Science</li>
                 <li>Recieved participation at the science fair when I was 5</li>
                 <li>My favorite movie is Grown Ups</li>
                 <li>Have mullet</li>
             </ul>
-<<<<<<< HEAD
         </p></td>
   </tr>
 </tbody>
 </table>
-=======
         </p>
     </div>
->>>>>>> 851d54679240110f4db258c5cc6aa6f21ca88850
 </main>
