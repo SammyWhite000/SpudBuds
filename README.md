@@ -3,16 +3,16 @@ https://www.cs.colostate.edu:4444/~EID/SpudBuds/local_html/cs312/m1/index.php/sp
 
 ## Pages
 - [ ] Home
-  - [ ] Modern Design
+  - [x ] Modern Design
   - [ ] Basic welcome information
-  - [ ] Useful links to get to the other pages on the site
-    - [ ] Home
-    - [ ] About
+  - [ x] Useful links to get to the other pages on the site
+    - [x ] Home
+    - [x ] About
     - [ ] Color Coordinator
-- [ ] About
-  - [ ] Team member names
-  - [ ] Brief biography of each team member
-  - [ ] Picture or avatar for each team member
+- [ x] About
+  - [x ] Team member names
+  - [ x] Brief biography of each team member
+  - [ x] Picture or avatar for each team member
 - [ ] Color Coordinator
   - [ ] See Requirements below
 
@@ -78,24 +78,24 @@ https://www.cs.colostate.edu:4444/~EID/SpudBuds/local_html/cs312/m1/index.php/sp
 
 
 ## Fuel PHP Framework
-- [ ] Every page, except the print view, should use the same layout and be managed in a central location (ie, if there's a typo, you only have to change it in one place).
-- [ ] Each team member is responsible for hosting the complete application on the local_html server reachable at `.../~[eid]/m1/...`.
-- [ ] `.../~[eid]/m1` should redirect to the home page of the site.
-- [ ] One member of the group must submit a tar file of the project to Canvas. Tar file structure should be as follows:
-  - [ ] Fuel
-    - [ ] app
-      - [ ] classes
-        - [ ] controllers
-           - [ ] `your controllers`
+- [x ] Every page, except the print view, should use the same layout and be managed in a central location (ie, if there's a typo, you only have to change it in one place).
+- [ x] Each team member is responsible for hosting the complete application on the local_html server reachable at `.../~[eid]/m1/...`.
+- [ x] `.../~[eid]/m1` should redirect to the home page of the site.
+- [ x] One member of the group must submit a tar file of the project to Canvas. Tar file structure should be as follows:
+  - [x ] Fuel
+    - [x ] app
+      - [x ] classes
+        - [x ] controllers
+           - [x ] `your controllers`
         -  model
-           - [ ] `your view folders`
-      - [ ] views
-        - [ ] `your view folders`
-  - [ ] local_html
-    - [ ] m1
-      - [ ] index.php
-      - [ ] assets
-        - [ ] `any assets used`
+           - [ x] `your view folders`
+      - [x ] views
+        - [x ] `your view folders`
+  - [x ] local_html
+    - [x ] m1
+      - [ x] index.php
+      - [x ] assets
+        - [x ] `any assets used`
 
 ### Grading Breakdown
 - [ ] Home Page as specified, site uses Fuel framework and templates (10 points)

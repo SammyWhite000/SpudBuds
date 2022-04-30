@@ -7,7 +7,7 @@
     <meta name="description" content="Fuel Template"></meta>
     <style type="text/css"></style>
     
-    <?php echo Asset::css("spudbuds.css") ?>
+    <?php echo Asset::css($css) ?>
     <title> <?php echo $title ?>  </title>
 </head>
 <body>
@@ -17,17 +17,18 @@
             <li><a href="index.php">SpudBuds</a></li>
             <li><a href="bios.php">About Us</a></li>
             <li><a href="mosaic2.php">Mosaic</a></li>
-            
         </ul>
     </nav>
 
+    <div id="logo">
+       <?php echo Asset::img("spudbudstransparent.png"); ?>
+    </div>
+
     <header>
-       <h1> <?php echo $header; ?> </h1>
+       <h1> <?php echo $header; ?>  </h1>
     </header>
 
-    <main> 
-        <?php echo $contents; ?> 
-    </main>
+    <?php echo $contents; ?> 
     
     <footer>
          <p>CS312 Spring 2022 | SpudBuds | Group 14 </p>
