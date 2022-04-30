@@ -1,0 +1,96 @@
+/*
+color: #2C3740;  // dark greyish blue 
+color: #28594B;  // forest green - footer text color
+color: #297350;  // traditional green  - background color
+color: #F2B6A0;  // skin pink - text color
+color: #F2F2F2;  // white - Hover color
+*/
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color:#297350; /* traditional green */
+  }
+    
+  nav li {
+    float: left;
+  }
+    
+  nav li a {
+    display: block;
+    color: #F2B6A0; /* skin pink  */
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+  }
+    
+  nav li a:hover {
+    color:  #F2F2F2;  /* white */
+  }
+    
+  h1 {
+    color: #2C3740; /* dark greyish blue */
+  }
+    
+  body {
+    background-color: #fffdd0 ; /*#fffff0*/
+  }
+    
+  main {
+    width: 1000px;
+    margin-left:auto;
+    margin-right: auto;
+    background-color:  #297350; /* traditional green */
+    color: #F2B6A0; /* skin pink */
+    font-family: sans-serif;
+    margin-bottom: 50px; /*for the footer not to cover content */
+    /*content becomes centered if page is wider than necessary */
+  }
+    
+  #logo img {
+    width: auto;
+    height: 100px;
+    margin-left: auto;
+    margin-right: auto; 
+    display: block;
+    padding-top: 10px; /* Put some space between img and nav bar */
+  }
+    
+  footer{
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 50px; /*Needs to match margin-bottom in main */
+    color: #2C3740; /* dark greyish blue */ 
+    text-align: center;
+    background-color:#F2B6A0; /* skin pink - text color */
+  }
+  
+  #jon img, #sam img, #ellery img , #thad img {
+    width: auto;
+    height: 300px;
+    margin-left: auto;
+    margin-right: auto; 
+    display: block;
+    padding-top: 10px; /* Put some space between img and nav bar */
+  }
+     
+  #jon, #sam {
+    float: left;
+    margin-right: auto;
+    margin-left: auto;
+  }
+  
+  #ellery, #thad {
+    float: left;
+    margin-right: auto;
+    margin-left: auto;
+    margin-bottom: 45px; /* Extra space on the bottom so the footer doesn't cover bios */
+  }
+  
+  h1, h2 {
+    text-align: center;
+  }

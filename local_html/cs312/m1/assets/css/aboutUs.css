@@ -69,26 +69,17 @@ footer{
   background-color:#F2B6A0; /* skin pink - text color */
 }
 
-#jon img, #sam img, #ellery img , #thad img {
-  width: auto;
+p img, p img, p img , p img {
   height: 300px;
-  margin-left: auto;
-  margin-right: auto; 
+  margin: 0 auto;
   display: block;
-  padding-top: 10px; /* Put some space between img and nav bar */
-}
-   
-#jon, #sam {
-  float: left;
-  margin-right: auto;
-  margin-left: auto;
+  text-align: center;
+  
 }
 
-#ellery, #thad {
-  float: left;
-  margin-right: auto;
+.extra_space {
   margin-left: auto;
-  margin-bottom: 45px; /* Extra space on the bottom so the footer doesn't cover bios */
+  margin-right: auto;
 }
 
 h1, h2 {
