@@ -14,9 +14,9 @@
   <tr>
     <td><p> 
             <ul> 
-                <li class="hanging">Third Year Student</li>
-                <li class="hanging">Favorite Color is Purple </li>
-                <li class="hanging">Favorite TV Show is currently Criminal Minds</li>
+                <li class="hanging" >Third Year Student</li>
+                <li class="hanging" >Favorite Color is Purple </li>
+                <li class="hanging" >Favorite TV Show is currently Criminal Minds</li>
             </ul>
         </p></td>
     <td></td>
@@ -46,9 +46,9 @@
   <tr>
     <td> <p>
             <ul>
-                <li class="hanging">Third Year Student</li>
-                <li class="hanging">Favorite Color is Slate Blue</li>
-                <li class="hanging">My favorite TV Show will always be Grey's Anatomy</li>
+                <li class="hanging" >Third Year Student</li>
+                <li class="hanging" >Favorite Color is Slate Blue</li>
+                <li class="hanging" >My favorite TV Show will always be Grey's Anatomy</li>
             </ul>
         </p></td>
     <td></td>
