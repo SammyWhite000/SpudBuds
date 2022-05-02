@@ -14,17 +14,17 @@
   <tr>
     <td><p> 
             <ul> 
-                <li>Third Year Student</li>
-                <li>Favorite Color is Purple </li>
-                <li>Favorite TV Show is currently Criminal Minds</li>
+                <li class="hanging">Third Year Student</li>
+                <li class="hanging">Favorite Color is Purple </li>
+                <li class="hanging">Favorite TV Show is currently Criminal Minds</li>
             </ul>
         </p></td>
     <td></td>
     <td><p>
             <ul>
-                <li>Second Year Computer Science Major</li>
-                <li>Favorite Color is Dark Gray</li>
-                <li>My favorite TV Show is currently Formula One: Drive to survive</li>
+                <li class="hanging">Second Year Computer Science Major</li>
+                <li class="hanging">Favorite Color is Dark Gray</li>
+                <li class="hanging">My favorite TV Show is currently Formula One: Drive to Survive</li>
             </ul>
         </p></td>
   </tr>
@@ -46,18 +46,18 @@
   <tr>
     <td> <p>
             <ul>
-                <li>Third Year Student</li>
-                <li>Favorite Color is Slate Blue</li>
-                <li>My favorite TV Show will always be Grey's Anatomy</li>
+                <li class="hanging">Third Year Student</li>
+                <li class="hanging">Favorite Color is Slate Blue</li>
+                <li class="hanging">My favorite TV Show will always be Grey's Anatomy</li>
             </ul>
         </p></td>
     <td></td>
     <td><p>
             <ul>
-                <li>Junior in Computer Science</li>
-                <li>Recieved participation at the science fair when I was 5</li>
-                <li>My favorite movie is Grown Ups</li>
-                <li>Have mullet</li>
+                <li class="hanging">Junior in Computer Science</li>
+                <li class="hanging">Recieved participation at the science fair when I was 5</li>
+                <li class="hanging">My favorite movie is Grown Ups</li>
+                <li class="hanging">Have mullet</li>
             </ul>
         </p></td>
   </tr>

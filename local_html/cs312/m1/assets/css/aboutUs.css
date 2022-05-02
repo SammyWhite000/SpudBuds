@@ -42,7 +42,7 @@ main {
   width: 1000px;
   margin-left:auto;
   margin-right: auto;
-  background-color:  #297350; /* traditional green */
+  background-color:  #297350;  /* traditional green */
   color: #F2B6A0; /* skin pink */
   font-family: sans-serif;
   margin-bottom: 50px; /*for the footer not to cover content */
@@ -78,10 +78,15 @@ p img, p img, p img , p img {
 }
 
 .extra_space {
-  padding-left: 50px;
+  padding-left: 65px;
   padding-right: 30px;
 }
 
 h1, h2 {
   text-align: center;
+}
+
+.hanging{
+  
+  margin-left: 15px;
 }
