@@ -78,8 +78,8 @@ p img, p img, p img , p img {
 }
 
 .extra_space {
-  margin-left: auto;
-  margin-right: auto;
+  padding-left: 50px;
+  padding-right: 30px;
 }
 
 h1, h2 {
