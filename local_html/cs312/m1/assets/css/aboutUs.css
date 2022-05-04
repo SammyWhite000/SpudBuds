@@ -7,78 +7,83 @@ color: #F2F2F2;  // white - Hover color
 */
 
 nav ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    overflow: hidden;
-    background-color:#297350; /* traditional green */
-  }
-  
-  nav li {
-    float: left;
-  }
-  
-  nav li a {
-    display: block;
-    color: #F2B6A0; /* skin pink  */
-    text-align: center;
-    padding: 14px 16px;
-    text-decoration: none;
-  }
-  
-  nav li a:hover {
-    color:  #F2F2F2;  /* white */
-  }
-  
-  h1 {
-    color: #2C3740; /* dark greyish blue */
-  }
-  
-  body {
-    background-color: #fffdd0 ; /*#fffff0*/
-  }
-  
-  main {
-      width: 1000px;
-      margin-left:auto;
-      margin-right: auto;
-      background-color:  #297350; /* traditional green */
-      color: #F2B6A0; /* skin pink */
-      font-family: sans-serif;
-      margin-bottom: 50px; /*for the footer not to cover content */
-      /*content becomes centered if page is wider than necessary */
-  }
-  
-  #logo img {
-      width: auto;
-      height: 100px;
-      margin-left: auto;
-      margin-right: auto; 
-      display: block;
-      padding-top: 10px; /* Put some space between img and nav bar */
-  }
-  
-  footer{
-    position: fixed;
-    left: 0;
-    bottom: 0;
-    width: 100%;
-    height: 50px; /*Needs to match margin-bottom in main */
-    color: #2C3740; /* dark greyish blue */ 
-    text-align: center;
-    background-color:#F2B6A0; /* skin pink - text color */
-  
-  }
-
-  /*Broken at the moment */
-
-   
-   #jon img, #sam img, #ellery img , #thad img {
-    width: auto;
-    height: 300px;
-    margin-left: auto;
-    margin-right: auto; 
-    display: block;
-    padding-top: 10px; /* Put some space between img and nav bar */
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color:#297350; /* traditional green */
 }
-   
+  
+nav li {
+  float: left;
+}
+  
+nav li a {
+  display: block;
+  color: #F2B6A0; /* skin pink  */
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+  
+nav li a:hover {
+  color:  #F2F2F2;  /* white */
+}
+  
+h1 {
+  color: #2C3740; /* dark greyish blue */
+}
+  
+body {
+  background-color: #fffdd0 ; /*#fffff0*/
+}
+  
+main {
+  width: 1000px;
+  margin-left:auto;
+  margin-right: auto;
+  background-color:  #297350;  /* traditional green */
+  color: #F2B6A0; /* skin pink */
+  font-family: sans-serif;
+  margin-bottom: 50px; /*for the footer not to cover content */
+  /*content becomes centered if page is wider than necessary */
+}
+  
+#logo img {
+  height: 60px;
+  display: block;
+  margin-left: 15px;
+  margin-right: 15px;
+}
+  
+footer{
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 50px; /*Needs to match margin-bottom in main */
+  color: #2C3740; /* dark greyish blue */ 
+  text-align: center;
+  background-color:#F2B6A0; /* skin pink - text color */
+}
+
+p img, p img, p img , p img {
+  height: 300px;
+  margin: 0 auto;
+  display: block;
+  text-align: center;
+  
+}
+
+.extra_space {
+  padding-left: 65px;
+  padding-right: 30px;
+}
+
+h1, h2 {
+  text-align: center;
+}
+
+.hanging{
+  margin-left: 15px;
+}
