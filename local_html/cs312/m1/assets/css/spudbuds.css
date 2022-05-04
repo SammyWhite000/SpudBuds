@@ -22,7 +22,11 @@ nav li a {
   display: block;
   color: #F2B6A0; /* skin pink  */
   text-align: center;
-  padding: 14px 16px;
+  /* padding: 14px 16px; */
+  padding-left: 16px;
+  padding-right: 16px;
+  padding-top: 22px;
+  padding-bottom: 14px;
   text-decoration: none;
 }
 
