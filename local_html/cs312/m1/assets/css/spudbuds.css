@@ -51,9 +51,10 @@ main {
 }
 
 #logo img {
-  height: 120px;
-  
+  height: 50px;
+  display: block;
   margin-left: 445px;
+  margin-right: 15px;
 }
 
 footer{
