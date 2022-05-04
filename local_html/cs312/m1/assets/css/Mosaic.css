@@ -7,59 +7,70 @@ color: #F2F2F2;  // white - Hover color
 */
 
 nav ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    overflow: hidden;
-    background-color:#297350; /* traditional green */
-  }
-  
-  nav li {
-    float: left;
-  }
-  
-  nav li a {
-    display: block;
-    color: #F2B6A0; /* skin pink  */
-    text-align: center;
-    padding: 14px 16px;
-    text-decoration: none;
-  }
-  
-  nav li a:hover {
-    color:  #F2F2F2;  /* white */
-  }
-  
-  h1 {
-    color: #2C3740; /* dark greyish blue */
-  }
-  
-  body {
-    background-color: #fffdd0 ; /*#fffff0*/
-  }
-  
-  main {
-      width: 1000px;
-      margin-left:auto;
-      margin-right: auto;
-      background-color:  #297350; /* traditional green */
-      color: #F2B6A0; /* skin pink */
-      font-family: sans-serif;
-      margin-bottom: 50px; /*for the footer not to cover content */
-      /*content becomes centered if page is wider than necessary */
-  }
-  
-  #logo img {
-    height: 50px;
-    display: block;
-    margin-left: auto;
-    margin-right: auto; 
-    float: right;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color:#297350; /* traditional green */
+}  
+
+nav li {
+  float: left;
 }
-  
-  footer{
-    position: sticky;
-    padding-top: 5px;
+
+nav li a {
+  display: block;
+  color: #F2B6A0; /* skin pink  */
+  text-align: center;
+  /* padding: 14px 16px; */
+  padding-left: 16px;
+  padding-right: 16px;
+  padding-top: 22px;
+  padding-bottom: 14px;
+  text-decoration: none;
+}
+
+nav li a:hover {
+  color:  #F2F2F2;  /* white */
+}
+
+#logo img {
+  height: 60px;
+  display: block;
+  margin-left: 15px;
+  margin-right: 15px;
+}
+
+#why {
+  text-align: center;
+  margin-left: 0px;
+  margin-right:0px;
+  margin-top: 0px;
+  margin-bottom: 10px;
+}
+
+h1 {
+  color: #2C3740; /* dark greyish blue */
+  text-align: center;
+}
+
+body {
+  background-color: #fffdd0 ; /*#fffff0*/
+}
+
+main {
+    width: 1000px;
+    margin-left:auto;
+    margin-right: auto;
+    background-color:  #297350; /* traditional green */
+    color: #F2B6A0; /* skin pink */
+    font-family: sans-serif;
+    margin-bottom: 50px; /*for the footer not to cover content */
+    /*content becomes centered if page is wider than necessary */
+}
+ footer{
+    position: fixed;
+    /* padding-top: 2px; */
     left: 0;
     bottom: 0;
     margin-top: 10px;
@@ -69,17 +80,14 @@ nav ul {
     text-align: center;
     background-color:#F2B6A0; /* skin pink - text color */
   
-  }
+}
+ 
+ #table1 {
+   /* background-color: white; */
    
-   #table1 {
-     /* background-color: white; */
-     
-     /*Separate table1 from table2 */
-     margin-top: 15px; 
-     margin-bottom: 80px;
+   /*Separate table1 from table2 */
+   margin-top: 15px; 
+   /* margin-bottom: 40px; */
+}
 
-   }
 
-  h1 {
-    text-align: center;
-  }

@@ -1,10 +1,20 @@
 <html>
+    <div id="why">
+        <p>These color coordinate sheets are actively used in Vision Therapy for certain vision disorders.<br> 
+        The top table will consist of colors that you would like to use for the color coordinates. The bottom table will be the colors in use
+        for the vision therapy. <br>
+        Start by inputing the number of columns and rows that you would like to generate. The mosaic table will always
+        be have the same number of columns and rows. <br>
+        Next, determine the number of unique colors that you would like to use. <br>
+        After the tables are generated, you will have the ability to print your table in grayscale. <br>
+        </p>
+    </div>
 
     <!-- Setup for text boxes and submit button -->
     <form method="get" action="mosaic2.php">
-    <label for="number">Number Rows/Cols</label>
+    <label for="number">Number of Rows/Cols (one number)</label>
     <input type="text" name = 'number' id="number" required><br>
-    <label for="color">Color</label>
+    <label for="color">Number of Unique Colors</label>
     <input type="text" name = 'color' id = 'color' required><br>
     <input type="submit" value="Submit">
     </form>
@@ -12,7 +22,6 @@
 <?php
 //Table two
 
-    $colorU = array("red", "orange", "yellow", "green", "blue", "purple", "grey", "brown", "black", "teal");
     $colors = array("Red", "Orange", "Yellow", "Green", "Blue", "Purple", "Grey", "Brown", "Black", "Teal");
     //Boolean values to check if both values are updated/have a value
     $boolNum = FALSE;
@@ -42,7 +51,7 @@
         }
         else{
         $boolColor = FALSE;
-        echo "Invalid color parameters. Must be in range 1-10";
+        echo "Invalid rows/color parameters. Must be in range 1-10<br>";
         }
     }
 
@@ -56,18 +65,21 @@
         for($x=0; $x < $color; $x++){
             //Start of table
             echo "<tr>";
+
             //Start of Drop Down menu: First Item is blank 
-            echo "<td style=\"width:20%\"> 
-            <select id=\"$x\" onchange=\"updateFunc($x)\">
+            echo "<td style=\"width:20%\">";
+
+            //Code for Drop down menu
+            echo "<select id=\"$x\" onchange=\"updateFunc($x)\">
                 <option id=\"blank\"></option>";
                 //Loop through Colors arrays and make option in menu
                 foreach($colors as $colorVals){
-                   echo "<option style=\"background-color:$colorVals\" id=\"$colorVals\" value=\"$colorVals\">$colorVals</option>";
+                   echo "<option style=\"background-color:$colorVals\" id=\"$colorVals\">$colorVals</option>";
                 }
             //End of drop down menu 
             echo "</select>
             </td>";
-            echo "<td style=\"width:80%\"> na </td>";
+            echo "<td style=\"width:80%\"></td>";
             echo"</tr>";
         }
         echo"</table>";
@@ -130,7 +142,7 @@
                         $counter++;
                     }
                     else{
-                    echo "<td>na</td>";
+                    echo "<td></td>";
                     }
                 }
                 echo"</tr>";
@@ -140,5 +152,10 @@
             echo"</div>"; // End of "<div id=\"table2\">";
     }
     echo"<button onClick=\"window.print()\">Print this page</button>";
+    echo "<br>";
+    echo "<br>";
+    echo "<br>";
+    echo "<br>";
+    echo "<br>";
 ?>
 <html>

@@ -28,11 +28,13 @@
             </ul>
         </p></td>
   </tr>
+  <!--
   <tr>
     <td class="extra_space"></td>
     <td class="extra_space"></td>
     <td class="extra_space"></td>
   </tr>
+-->
   <tr>
     <td><h2> Ellery Osborne</h2></td>
     <td></td>
