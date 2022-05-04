@@ -1,3 +1,43 @@
+<script>
+    //Array to hold currently selected colors
+    let currentColors = [10];
+
+    //check if color is present in array, return true if it is
+    function checkColors(x){
+        for(let i = 0; i < 10; i++){
+            if(currentColors[i] == x){
+                return true;
+            }
+        }
+        //Return false otherwise
+        return false;
+    }
+    // Funciton to change color of drop down menu
+    function updateFunc(x){
+        //Get the current dropDown element by ID
+        let thing = document.getElementById(x);
+        //Add a style to it once it is selected
+        thing.style.backgroundColor = thing.value;
+        //Check if Color is already selected, if true
+        //set back to blank and display alert
+        if(checkColors(thing.value)){
+            thing.value = document.getElementById(".blank"); 
+            thing.style.backgroundColor = "";
+            alert("Cannot Select this Color: It is already Used");
+        }
+        //if not, add to array
+        else{
+            currentColors[x] = thing.value;
+        }
+        //Display Color for debugging purposes
+        console.log(thing.value);
+    }
+
+    // Chenge backgorund color of cell in table2
+    function changeTableColor(){
+        console.log("Change color working")
+    }
+</script>
 <html>
     <div id="why">
         <p>These color coordinate sheets are actively used in Vision Therapy for certain vision disorders.<br> 
@@ -84,42 +124,7 @@
         }
         echo"</table>";
         echo"</div>"; //End of div id="table1
-//Javascript that will look for event change  
 ?>
-<script>
-    //Array to hold currently selected colors
-    let currentColors = [10];
-
-    //check if color is present in array, return true if it is
-    function checkColors(x){
-        for(let i = 0; i < 10; i++){
-            if(currentColors[i] == x){
-                return true;
-            }
-        }
-        //Return false otherwise
-        return false;
-    }
-    function updateFunc(x){
-        //Get the current element by ID
-        let thing = document.getElementById(x);
-        //Add a style to it once it is selected
-        thing.style.backgroundColor = thing.value;
-        //Check if Color is already selected, if true
-        //set back to blank and display alert
-        if(checkColors(thing.value)){
-            thing.value = document.getElementById(".blank"); 
-            thing.style.backgroundColor = "";
-            alert("Cannot Select this Color: It is already Used");
-        }
-        //if not, add to array
-        else{
-            currentColors[x] = thing.value;
-        }
-        //Display Color for debugging purposes
-        console.log(thing.value);
-    }
-</script>
 <?php
         echo "<div id=\"table2\">";
         //Thad's jank ass code for table2
