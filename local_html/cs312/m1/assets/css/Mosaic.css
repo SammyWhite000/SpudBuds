@@ -13,6 +13,7 @@ nav ul {
   overflow: hidden;
   background-color:#297350; /* traditional green */
 }  
+
 nav li {
   float: left;
 }
@@ -40,8 +41,17 @@ nav li a:hover {
   margin-right: 15px;
 }
 
+#why {
+  text-align: center;
+  background-color: #28594B;
+  padding-left: 0px;
+  padding-right:0px;
+  
+}
+
 h1 {
   color: #2C3740; /* dark greyish blue */
+  text-align: center;
 }
 
 body {
@@ -60,7 +70,7 @@ main {
 }
  footer{
     position: fixed;
-    padding-top: 5px;
+    /* padding-top: 2px; */
     left: 0;
     bottom: 0;
     margin-top: 10px;
@@ -70,12 +80,6 @@ main {
     text-align: center;
     background-color:#F2B6A0; /* skin pink - text color */
   
-  }
-#logo img {
-  height: 60px;
-  display: block;
-  margin-left: 15px;
-  margin-right: 15px;
 }
  
  #table1 {
@@ -83,10 +87,7 @@ main {
    
    /*Separate table1 from table2 */
    margin-top: 15px; 
-   margin-bottom: 80px;
-
- }
-
-h1 {
-  text-align: center;
+   /* margin-bottom: 40px; */
 }
+
+
