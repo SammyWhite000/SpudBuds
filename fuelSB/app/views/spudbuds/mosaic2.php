@@ -1,4 +1,10 @@
 <html>
+    <div id="why">
+        <p>These color coordinate sheets are actively used in Vision Therapy for certain vision disorders.  
+            You just make software to help with this type of therapy! 
+             Nice.
+        </p>
+    </div>
 
     <!-- Setup for text boxes and submit button -->
     <form method="get" action="mosaic2.php">
