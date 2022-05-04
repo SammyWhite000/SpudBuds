@@ -11,18 +11,23 @@
     <title> <?php echo $title ?>  </title>
 </head>
 <body>
-    <nav>
+<nav>
         <ul>
             <!-- Will need to change the links for SpudBuds https://www.w3resource.com/javascript-exercises/javascript-dom-exercise-7.php -->
-            <li><a href="index.php">SpudBuds</a></li>
+            <li> <div id="logo">
+                <?php echo Asset::img("SpudBudsNav.png"); ?>
+            </div></li>
+            <li><a href="index.php">Home</a></li>
             <li><a href="bios.php">About Us</a></li>
             <li><a href="mosaic2.php">Mosaic</a></li>
         </ul>
     </nav>
 
+    <!--
     <div id="logo">
        <?php echo Asset::img("spudbudstransparent.png"); ?>
     </div>
+    -->
 
     <header>
        <h1> <?php echo $header; ?>  </h1>
