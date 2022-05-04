@@ -1,4 +1,7 @@
 https://www.cs.colostate.edu:4444/~EID/SpudBuds/local_html/cs312/m1/index.php/spudbuds/bios.php
+
+# Custom Error Messages
+https://www.cognitoforms.com/blog/106/css-tips-and-tricks-for-customizing-error-messages
 # SpudBuds - Milestone 1
 
 ## Pages
