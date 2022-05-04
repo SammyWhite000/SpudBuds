@@ -15,7 +15,7 @@
         <ul>
             <!-- Will need to change the links for SpudBuds https://www.w3resource.com/javascript-exercises/javascript-dom-exercise-7.php -->
             <li> <div id="logo">
-                <?php echo Asset::img("SpudBudsNav.png"); ?>
+                <?php echo Asset::img("SpudBudsNavCropped.png"); ?>
             </div></li>
             <li><a href="index.php">Home</a></li>
             <li><a href="bios.php">About Us</a></li>

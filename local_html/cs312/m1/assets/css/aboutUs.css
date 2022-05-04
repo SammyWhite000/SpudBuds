@@ -50,13 +50,10 @@ main {
 }
   
 #logo img {
-  width: auto;
-  height: 50px;
-  margin-left: auto;
-  margin-right: auto; 
+  height: 60px;
   display: block;
-  padding-top: 10px; /* Put some space between img and nav bar */
-  float:right;
+  margin-left: 15px;
+  margin-right: 15px;
 }
   
 footer{
