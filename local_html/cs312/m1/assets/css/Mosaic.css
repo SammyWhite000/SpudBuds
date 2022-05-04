@@ -43,10 +43,14 @@ nav li a:hover {
 
 #why {
   text-align: center;
-  background-color: #28594B;
   padding-left: 0px;
   padding-right:0px;
-  
+  padding-top: 0px;
+  padding-bottom: 0px;
+  margin-left: 0px;
+  margin-right:0px;
+  margin-top: 0px;
+  margin-bottom: 10px;
 }
 
 h1 {
