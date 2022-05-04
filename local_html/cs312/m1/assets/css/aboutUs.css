@@ -42,7 +42,7 @@ main {
   width: 1000px;
   margin-left:auto;
   margin-right: auto;
-  background-color:  #297350; /* traditional green */
+  background-color:  #297350;  /* traditional green */
   color: #F2B6A0; /* skin pink */
   font-family: sans-serif;
   margin-bottom: 50px; /*for the footer not to cover content */
@@ -51,11 +51,12 @@ main {
   
 #logo img {
   width: auto;
-  height: 100px;
+  height: 50px;
   margin-left: auto;
   margin-right: auto; 
   display: block;
   padding-top: 10px; /* Put some space between img and nav bar */
+  float:right;
 }
   
 footer{
@@ -69,28 +70,23 @@ footer{
   background-color:#F2B6A0; /* skin pink - text color */
 }
 
-#jon img, #sam img, #ellery img , #thad img {
-  width: auto;
+p img, p img, p img , p img {
   height: 300px;
-  margin-left: auto;
-  margin-right: auto; 
+  margin: 0 auto;
   display: block;
-  padding-top: 10px; /* Put some space between img and nav bar */
-}
-   
-#jon, #sam {
-  float: left;
-  margin-right: auto;
-  margin-left: auto;
+  text-align: center;
+  
 }
 
-#ellery, #thad {
-  float: left;
-  margin-right: auto;
-  margin-left: auto;
-  margin-bottom: 45px; /* Extra space on the bottom so the footer doesn't cover bios */
+.extra_space {
+  padding-left: 65px;
+  padding-right: 30px;
 }
 
 h1, h2 {
   text-align: center;
+}
+
+.hanging{
+  margin-left: 15px;
 }
