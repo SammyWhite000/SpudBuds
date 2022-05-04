@@ -30,6 +30,7 @@
             currentColors[x] = thing.value;
         }
         //Display Color for debugging purposes
+        console.log(currentColors);
         console.log(thing.value);
     }
  
@@ -112,6 +113,10 @@
                 foreach($colors as $colorVals){
                    echo "<option style=\"background-color:$colorVals\" id=\"$colorVals\">$colorVals</option>";
                 }
+                //Add radio button to table 
+                echo"<input type=\"radio\" id=\"radioButton $x\" name=\"radioName\"";
+            
+                echo"<label for=\"radioButton\">Color selected for bottom table</label>";
             //End of drop down menu 
             echo "</select>
             </td>";
