@@ -10,9 +10,9 @@
 
     <!-- Setup for text boxes and submit button -->
     <form method="get" action="mosaic2.php">
-    <label for="number">Number of Cols</label>
+    <label for="number">Number of Rows/Cols (one number)</label>
     <input type="text" name = 'number' id="number" required><br>
-    <label for="color">Number of Rows</label>
+    <label for="color">Number of Unique Colors</label>
     <input type="text" name = 'color' id = 'color' required><br>
     <input type="submit" value="Submit">
     </form>
