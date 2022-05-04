@@ -32,11 +32,7 @@
         //Display Color for debugging purposes
         console.log(thing.value);
     }
-
-    // Chenge backgorund color of cell in table2
-    function changeTableColor(){
-        console.log("Change color working")
-    }
+ 
 </script>
 <html>
     <div id="why">
@@ -128,7 +124,7 @@
 <?php
         echo "<div id=\"table2\">";
         //Thad's jank ass code for table2
-            echo "<table border =\"1px\" style=\"width:100%\">";
+            echo "<table id=\"tableTwo\" border =\"1px\" style=\"width:100%\">";
             echo"<tr>";
             echo"<th>";
             $alph = 'A';
@@ -147,7 +143,7 @@
                         $counter++;
                     }
                     else{
-                    echo "<td></td>";
+                    echo "<td id=cell", $x,",",$y, ">&nbsp</td>";
                     }
                 }
                 echo"</tr>";
@@ -163,4 +159,13 @@
     echo "<br>";
     echo "<br>";
 ?>
+<script>
+    // change background color of cell in table2
+    $("#tableTwo td").click(function(){
+        console.log("FUCK");
+        let currID = $(this).attr('id');
+        console.log(currID);
+        //$(this).toggleClass("strip").siblings().removeClass();
+    });    
+</script>
 </html>
