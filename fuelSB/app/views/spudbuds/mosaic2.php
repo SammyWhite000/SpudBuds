@@ -1,79 +1,4 @@
-<html>
-
-    <!-- Setup for text boxes and submit button -->
-    <form method="get" action="mosaic2.php">
-    <label for="number">Number Rows/Cols</label>
-    <input type="text" name = 'number' id="number" required><br>
-    <label for="color">Color</label>
-    <input type="text" name = 'color' id = 'color' required><br>
-    <input type="submit" value="Submit">
-    </form>
-
-<?php
-//Table two
-
-    $colorU = array("red", "orange", "yellow", "green", "blue", "purple", "grey", "brown", "black", "teal");
-    $colors = array("Red", "Orange", "Yellow", "Green", "Blue", "Purple", "Grey", "Brown", "Black", "Teal");
-    //Boolean values to check if both values are updated/have a value
-    $boolNum = FALSE;
-    $boolColor = FALSE;
-
-    //Initialize variabels for number of rows and columns and number of colors
-    $number = 0;
-    $color = 0;
-
-    //GET Event for number of rows and columns and set boolean == true
-    if(isset($_GET['number'])){
-        $number = $_GET['number'];
-        if($number >= 1 && $number <=26){
-            $boolNum = TRUE;
-        }
-        else{
-            $boolNum = FALSE;
-            echo "Invalid number parameters. Must be in range 1-26<br>";
-        }  
-    }
-
-    //GET event to get number of colors we will be using and set boolean to true 
-    if(isset($_GET['color'])){
-        $color = $_GET['color'];
-        if($color >= 1 && $color <=10){
-            $boolColor = TRUE;
-        }
-        else{
-        $boolColor = FALSE;
-        echo "Invalid color parameters. Must be in range 1-10";
-        }
-    }
-
-    //Only if both variables have values, start generating tables
-    if($boolColor == TRUE && $boolNum==TRUE){
-        //Start of div "<div id=\"table1\">"
-        echo "<div id=\"table1\">";
-        //Sammy's nice code for first table
-        echo "<table style=\"width:100%\"border =\"1px\" >";
-        $flag = false;
-        for($x=0; $x < $color; $x++){
-            //Start of table
-            echo "<tr>";
-            //Start of Drop Down menu: First Item is blank 
-            echo "<td style=\"width:20%\"> 
-            <select id=\"$x\" onchange=\"updateFunc($x)\">
-                <option id=\"blank\"></option>";
-                //Loop through Colors arrays and make option in menu
-                foreach($colors as $colorVals){
-                   echo "<option style=\"background-color:$colorVals\" id=\"$colorVals\" value=\"$colorVals\">$colorVals</option>";
-                }
-            //End of drop down menu 
-            echo "</select>
-            </td>";
-            echo "<td style=\"width:80%\"> na </td>";
-            echo"</tr>";
-        }
-        echo"</table>";
-        echo"</div>"; //End of div id="table1
-//Javascript that will look for event change  
-?>
+<!-- Javascript to handle drop down menu color Selections -->
 <script>
     //Array to hold currently selected colors
     let currentColors = [10];
@@ -107,7 +32,91 @@
         //Display Color for debugging purposes
         console.log(thing.value);
     }
+    function printPage(){
+        let table1 = document.getElementById(".table1");
+        var dtab = window.open("https://www.cs.colostate.edu:4444/~samwhit9/SpudBuds/local_html/cs312/m1/index.php/spudbuds/mosaic2.php");
+        dtab.document.open();
+        dtab.document.write();
+        dtab.document.close();
+    }
 </script>
+
+<html>
+
+    <!-- Setup for text boxes and submit button -->
+    <form method="get" action="mosaic2.php">
+    <label for="number">Number of Cols</label>
+    <input type="text" name = 'number' id="number" required><br>
+    <label for="color">Number of Rows</label>
+    <input type="text" name = 'color' id = 'color' required><br>
+    <input type="submit" value="Submit">
+    </form>
+
+<?php
+//Table two
+
+    $colorU = array("red", "orange", "yellow", "green", "blue", "purple", "grey", "brown", "black", "teal");
+    $colors = array("Red", "Orange", "Yellow", "Green", "Blue", "Purple", "Grey", "Brown", "Black", "Teal");
+    //Boolean values to check if both values are updated/have a value
+    $boolNum = FALSE;
+    $boolColor = FALSE;
+    //Initialize variabels for number of rows and columns and number of colors
+    $number = 0;
+    $color = 0;
+
+    //GET Event for number of rows and columns and set boolean == true
+    if(isset($_GET['number'])){
+        $number = $_GET['number'];
+        if($number >= 1 && $number <=26){
+            $boolNum = TRUE;
+        }
+        else{
+            $boolNum = FALSE;
+            echo "Invalid number parameters. Must be in range 1-26<br>";
+        }  
+    }
+
+    //GET event to get number of colors we will be using and set boolean to true 
+    //This is the number of rows there will be; Pretty confusing but it works
+    if(isset($_GET['color'])){
+        $color = $_GET['color'];
+        if($color >= 1 && $color <=10){
+            $boolColor = TRUE;
+        }
+        else{
+        $boolColor = FALSE;
+        echo "Invalid row parameters. Must be in range 1-10 <br>";
+        }
+    }
+
+    //Only if both variables have values, start generating tables
+    if($boolColor == TRUE && $boolNum==TRUE){
+        //Start of div "<div id=\"table1\">"
+        echo "<div id=\"table1\">";
+        //Sammy's nice code for first table
+        echo "<table style=\"width:100%\"border =\"1px\" >";
+        $flag = false;
+        for($x=0; $x < $color; $x++){
+            //Start of table
+            echo "<tr>";
+            //Start of Drop Down menu: First Item is blank 
+            echo "<td style=\"width:20%\"> 
+            <select id=\"$x\" onchange=\"updateFunc($x)\">
+                <option id=\"blank\"></option>";
+                //Loop through Colors arrays and make option in menu
+                foreach($colors as $colorVals){
+                   echo "<option style=\"background-color:$colorVals\" id=\"$colorVals\" value=\"$colorVals\">$colorVals</option>";
+                }
+            //End of drop down menu 
+            echo "</select>
+            </td>";
+            echo "<td style=\"width:80%\"> &nbsp </td>";
+            echo"</tr>";
+        }
+        echo"</table>";
+        echo"</div>"; //End of div id="table1
+//Javascript that will look for event change  
+?>
 <?php
         echo "<div id=\"table2\">";
         //Thad's jank ass code for table2
@@ -122,15 +131,15 @@
             echo"</tr>";
             $counter = 1;
 
-            for($x=0; $x <= $number -1; $x++){
+            for($x=0; $x <= $number; $x++){
                 echo "<tr>";
-                for($y=0; $y<=$number; $y++){
+                for($y=0; $y<= $number; $y++){
                     if($y == 0){
                         echo "<td>", $counter, "</td>";
                         $counter++;
                     }
                     else{
-                    echo "<td>na</td>";
+                    echo "<td>&nbsp</td>";
                     }
                 }
                 echo"</tr>";
@@ -139,6 +148,6 @@
             echo"</table>";
             echo"</div>"; // End of "<div id=\"table2\">";
     }
-    echo"<button onClick=\"window.print()\">Print this page</button>";
+    echo"<button onClick=\"printPage()\">Print this page</button>";
 ?>
 <html>
