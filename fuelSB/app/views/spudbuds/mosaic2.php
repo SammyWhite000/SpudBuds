@@ -34,9 +34,9 @@
     }
     function printPage(){
         let table1 = document.getElementById(".table1");
-        var dtab = window.open(table1);
+        var dtab = window.open("https://www.cs.colostate.edu:4444/~samwhit9/SpudBuds/local_html/cs312/m1/index.php/spudbuds/mosaic2.php");
         dtab.document.open();
-        dtab.document.write(table1);
+        dtab.document.write();
         dtab.document.close();
     }
 </script>
