@@ -50,6 +50,14 @@ main {
     background-color:  #297350; /* traditional green */
     color: #F2B6A0; /* skin pink */
     font-family: sans-serif;
+
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 30px;
+    padding-right: 30px;
+
+
+
     margin-bottom: 50px; /*for the footer not to cover content */
     /*content becomes centered if page is wider than necessary */
 }

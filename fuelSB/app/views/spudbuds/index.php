@@ -1,10 +1,15 @@
 <main>
     <h2> Group 14 </h2>
-    <p>You will create a web page for a fictitious company, including a name and logo.  You must have a homepage with a modern design 
-        that includes basic welcome information and contains useful links to get to the other pages on the site.  
+    <p> SpudBuds collaborated during the Spring 2022 semester for the color coordinate generation project.
+        SpudBuds took approximately 10 weeks to finish this project. SpudBuds is built using FuelPHP templates and
+        hard work. 
     </p>
-
-    <p> SpudBuds collaborated during the Spring 2022 semester for color coordinate generation.</p>
     <p> Color Coordinate generation is a fancy way of saying that we will be essentially be building
-        a mosiac based on user input for size and the colors that will be used. </p>
+        a mosaic table based on user input for size and the colors that will be used. This
+        mosaic table will then be used in vision therapy.
+    </p>
+    <p>
+        The color coordinate generation for vision therapy can be found in the Mosaic tab.
+        Our team profiles are under the About Us tab.
+    </p>
 </main>
