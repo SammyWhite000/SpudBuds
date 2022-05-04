@@ -1,8 +1,10 @@
 <html>
     <div id="why">
         <p>These color coordinate sheets are actively used in Vision Therapy for certain vision disorders.<br>  
-            You just make software to help with this type of therapy! <br> 
-            Nice.
+        Start by inputing the number of columns and rows that you would like to generate. The table will always
+        be square so the number of columns and rows will be the same. <br>
+        Next, determine the number of colors that you would like to use. <br>
+        After the tables are generated, you will have the ability to print your table in grayscale. <br>
         </p>
     </div>
 

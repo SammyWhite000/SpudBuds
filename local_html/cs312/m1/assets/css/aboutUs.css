@@ -49,6 +49,7 @@ main {
   background-color:  #297350;  /* traditional green */
   color: #F2B6A0; /* skin pink */
   font-family: sans-serif;
+  padding-right: 20px; 
   margin-bottom: 50px; /*for the footer not to cover content */
   /*content becomes centered if page is wider than necessary */
 }
@@ -79,10 +80,12 @@ p img, p img, p img , p img {
   
 }
 
+/*
 .extra_space {
   padding-left: 65px;
   padding-right: 30px;
 }
+*/
 
 h1, h2 {
   text-align: center;
