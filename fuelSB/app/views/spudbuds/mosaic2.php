@@ -30,10 +30,9 @@
             currentColors[x] = thing.value;
         }
         //Display Color for debugging purposes
-        console.log(currentColors);
+        //console.log(currentColors);\
         console.log(thing.value);
     }
- 
 </script>
 <html>
     <div id="why">
@@ -115,7 +114,6 @@
                 }
                 //Add radio button to table 
                 echo"<input type=\"radio\" id=\"radioButton $x\" name=\"radioName\"";
-            
                 echo"<label for=\"radioButton\">Color selected for bottom table</label>";
             //End of drop down menu 
             echo "</select>
@@ -179,5 +177,25 @@
         getCurrSelectedColor();
         //$(this).toggleClass("strip").siblings().removeClass();
     });    
+
+
+    //onclick event for radioButton
+    $("input:radio").change(function (){
+        var idIndex = this.id.split(' ');
+        console.log(idIndex[1]);
+        var styleColor = document.getElementById("dropMenu " + idIndex[1]).style.backgroundColor;
+        console.log(styleColor);
+    });
+
+    //Change first radioButton to have be selected by default
+    var firstButton = document.getElementById("radioButton 0");
+    firstButton.setAttribute("checked", "checked");
+    
+    //Change the first 
+    var red = document.getElementById("dropMenu 0");
+    red.setAttribute("style", "background-color: red;");
+    
+
+
 </script>
 </html>
