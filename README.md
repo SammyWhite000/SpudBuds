@@ -3,7 +3,8 @@ https://www.cs.colostate.edu:4444/~EID/SpudBuds/local_html/cs312/m1/index.php/sp
 # Custom Error Messages
 https://www.cognitoforms.com/blog/106/css-tips-and-tricks-for-customizing-error-messages
 # SpudBuds - Milestone 1
-
+## Radio Buttons
+https://stackoverflow.com/questions/17186239/jquery-click-event-on-radio-button-doesnt-get-fired
 ## Pages
 - [ ] Home
   - [x ] Modern Design
