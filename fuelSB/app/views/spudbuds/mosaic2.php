@@ -167,22 +167,28 @@
     //When clicked, get the id of the first drop down menu and make that the color
     function getCurrSelectedColor(){
         //Get all input values
+        let currSelected;
         var ele = document.getElementsByTagName('input');
         for(i = 0; i < ele.length; i++) {
             if(ele[i].type="radio") {
                 if(ele[i].checked){
-                    console.log(ele[i].id);
+                    //Return the currently selected elements id color
+                    currSelected = (ele[i].id);
+                    console.log("selected");
+                    console.log(selected);
                 }
             }
         }
-        let dropColor = document.getElementById("dropMenu 0").style.backgroundColor;
-        console.log(dropColor);
+        //Get the index of the menu that is the same as the radio button 
+        const temp = currSelected.split(" ");
+        let currIndexofMenu = temp[1];
+        //Return the current color 
+        return document.getElementById("dropMenu " + currIndexofMenu).style.backgroundColor;
     }
     // change background color of cell in table2
     $("#tableTwo td").click(function(){
         let currID = $(this).attr('id');
-        getCurrSelectedColor();
-        //$(this).toggleClass("strip").siblings().removeClass();
+        document.getElementById(currID).style.backgroundColor = getCurrSelectedColor();
     });    
 
     //onclick event for radioButton
@@ -197,7 +203,5 @@
     var firstButton = document.getElementById("radioButton 0");
     firstButton.setAttribute("checked", "checked");
     
-    //Change the first 
-    var red = document.getElementById("dropMenu 0");
 </script>
 </html>
