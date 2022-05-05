@@ -43,10 +43,18 @@ nav li a:hover {
 
 #why {
   text-align: center;
-  margin-left: 0px;
-  margin-right:0px;
-  margin-top: 0px;
-  margin-bottom: 10px;
+ 
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 5px;
+  padding-right: 5px;
+  padding-top: 1px;
+  padding-bottom: 1px;
+  background-color: #297350;
+  display: block;
+  width: 1100px;
+
+  color: #F2B6A0;
 }
 
 h1 {
@@ -106,7 +114,7 @@ main {
   color: black;
   border: 2px double black;
   padding: 5px;
-  width: 400px;
+  width: 500px;
   margin-bottom: 10px;
   margin-top: 2px;
   font-size: large;

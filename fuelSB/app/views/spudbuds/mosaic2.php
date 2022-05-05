@@ -53,14 +53,14 @@
 
     <div class="error">
     <input class="text_box"  type="text" name = 'number' id="number" required><br>
-    <div class="num_of_cells"> Invalid number parameters. Must be in range 1-26</div>
+    <!--<div class="num_of_cells"> Invalid number parameters. Must be in range 1-26</div> -->
     </div>
 
     <label for="color">Number of Unique Colors</label>
 
     <div class="error">
     <input class="text_box" type="text" name = 'color' id = 'color' required><br>
-    <div class="unique_colors"> Invalid rows/color parameters. Must be in range 1-10 </div>
+    <!--<div class="unique_colors"> Invalid rows/color parameters. Must be in range 1-10 </div> -->
     </div>
     
     <input type="submit" value="Submit">
@@ -87,7 +87,8 @@
         }
         else{
             $boolNum = FALSE;
-            echo "Invalid number parameters. Must be in range 1-26<br>";
+            //echo "Invalid number parameters. Must be in range 1-26<br>";
+            echo "<div class=\"num_of_cells\"> Invalid number parameters. Must be in range 1-26</div>";
         }  
     }
 
@@ -99,7 +100,9 @@
         }
         else{
         $boolColor = FALSE;
-        echo "Invalid rows/color parameters. Must be in range 1-10<br>";
+        //echo "Invalid rows/color parameters. Must be in range 1-10<br>";
+        echo "<div class=\"unique_colors\"> Invalid number of unique color parameters. Must be in range 1-10 </div>";
+
         }
     }
 
