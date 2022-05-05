@@ -217,7 +217,14 @@
     var globalColor = "red";
     $("#tableTwo td").click(function(){
         let currID = $(this).attr('id');
-        document.getElementById(currID).style.backgroundColor = getCurrSelectedColor();
+        //If element already has background color -> remove the background color
+        if(document.getElementById(currID).style.backgroundColor == getCurrSelectedColor()){
+            document.getElementById(currID).removeAttribute("style");
+        }
+        //Otherwise add background color
+        else{
+            document.getElementById(currID).style.backgroundColor = getCurrSelectedColor();
+        }
         globalColor = getCurrSelectedColor();
     });    
 
