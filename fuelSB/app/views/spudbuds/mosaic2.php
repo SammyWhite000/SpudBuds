@@ -163,11 +163,18 @@
     echo "<br>";
 ?>
 <script>
+    //Need to get current color of the first drop down menu
+    //When clicked, get the id of the first drop down menu and make that the color
+    function getCurrSelectedColor(){
+        let dropColor = document.getElementById("dropMenu 0").style.backgroundColor;
+        console.log("working??");
+        console.log(dropColor);
+    }
     // change background color of cell in table2
     $("#tableTwo td").click(function(){
         console.log("FUCK");
         let currID = $(this).attr('id');
-        console.log(currID);
+        getCurrSelectedColor();
         //$(this).toggleClass("strip").siblings().removeClass();
     });    
 
