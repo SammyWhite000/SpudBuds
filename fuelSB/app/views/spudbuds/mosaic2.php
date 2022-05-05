@@ -15,7 +15,7 @@
     // Funciton to change color of drop down menu
     function updateFunc(x){
         //Get the current dropDown element by ID
-        let thing = document.getElementById(x);
+        let thing = document.getElementById("dropMenu " + x);
         //Add a style to it once it is selected
         thing.style.backgroundColor = thing.value;
         //Check if Color is already selected, if true
@@ -107,7 +107,7 @@
             echo "<td style=\"width:20%\">";
 
             //Code for Drop down menu
-            echo "<select id=\"$x\" onchange=\"updateFunc($x)\">
+            echo "<select id=\"dropMenu $x\" onchange=\"updateFunc($x)\">
                 <option id=\"blank\"></option>";
                 //Loop through Colors arrays and make option in menu
                 foreach($colors as $colorVals){
@@ -165,11 +165,18 @@
     echo "<br>";
 ?>
 <script>
+    //Need to get current color of the first drop down menu
+    //When clicked, get the id of the first drop down menu and make that the color
+    function getCurrSelectedColor(){
+        let dropColor = document.getElementById("dropMenu 0").style.backgroundColor;
+        console.log("working??");
+        console.log(dropColor);
+    }
     // change background color of cell in table2
     $("#tableTwo td").click(function(){
         console.log("FUCK");
         let currID = $(this).attr('id');
-        console.log(currID);
+        getCurrSelectedColor();
         //$(this).toggleClass("strip").siblings().removeClass();
     });    
 </script>
