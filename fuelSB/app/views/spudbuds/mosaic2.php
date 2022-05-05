@@ -1,3 +1,39 @@
+<script>
+    //Array to hold currently selected colors
+    let currentColors = [10];
+
+    //check if color is present in array, return true if it is
+    function checkColors(x){
+        for(let i = 0; i < 10; i++){
+            if(currentColors[i] == x){
+                return true;
+            }
+        }
+        //Return false otherwise
+        return false;
+    }
+    // Funciton to change color of drop down menu
+    function updateFunc(x){
+        //Get the current dropDown element by ID
+        let thing = document.getElementById("dropMenu " + x);
+        //Add a style to it once it is selected
+        thing.style.backgroundColor = thing.value;
+        //Check if Color is already selected, if true
+        //set back to blank and display alert
+        if(checkColors(thing.value)){
+            thing.value = document.getElementById(".blank"); 
+            thing.style.backgroundColor = "";
+            alert("Cannot Select this Color: It is already Used");
+        }
+        //if not, add to array
+        else{
+            currentColors[x] = thing.value;
+        }
+        //Display Color for debugging purposes
+        //console.log(currentColors);\
+        // console.log(thing.value);
+    }
+</script>
 <html>
     <div id="why">
         <p>These color coordinate sheets are actively used in Vision Therapy for certain vision disorders.<br> 
@@ -12,11 +48,23 @@
 
     <!-- Setup for text boxes and submit button -->
     <form method="get" action="mosaic2.php">
+
     <label for="number">Number of Rows/Cols (one number)</label>
-    <input type="text" name = 'number' id="number" required><br>
+
+    <div class="error">
+    <input class="text_box"  type="text" name = 'number' id="number" required><br>
+    <div class="num_of_cells"> Invalid number parameters. Must be in range 1-26</div>
+    </div>
+
     <label for="color">Number of Unique Colors</label>
-    <input type="text" name = 'color' id = 'color' required><br>
+
+    <div class="error">
+    <input class="text_box" type="text" name = 'color' id = 'color' required><br>
+    <div class="unique_colors"> Invalid rows/color parameters. Must be in range 1-10 </div>
+    </div>
+    
     <input type="submit" value="Submit">
+
     </form>
 
 <?php
@@ -70,12 +118,15 @@
             echo "<td style=\"width:20%\">";
 
             //Code for Drop down menu
-            echo "<select id=\"$x\" onchange=\"updateFunc($x)\">
+            echo "<select id=\"dropMenu $x\" onchange=\"updateFunc($x)\">
                 <option id=\"blank\"></option>";
                 //Loop through Colors arrays and make option in menu
                 foreach($colors as $colorVals){
                    echo "<option style=\"background-color:$colorVals\" id=\"$colorVals\">$colorVals</option>";
                 }
+                //Add radio button to table 
+                echo"<input type=\"radio\" id=\"radioButton $x\" name=\"radioName\"";
+                echo"<label for=\"radioButton\">Color selected for bottom table</label>";
             //End of drop down menu 
             echo "</select>
             </td>";
@@ -84,46 +135,11 @@
         }
         echo"</table>";
         echo"</div>"; //End of div id="table1
-//Javascript that will look for event change  
 ?>
-<script>
-    //Array to hold currently selected colors
-    let currentColors = [10];
-
-    //check if color is present in array, return true if it is
-    function checkColors(x){
-        for(let i = 0; i < 10; i++){
-            if(currentColors[i] == x){
-                return true;
-            }
-        }
-        //Return false otherwise
-        return false;
-    }
-    function updateFunc(x){
-        //Get the current element by ID
-        let thing = document.getElementById(x);
-        //Add a style to it once it is selected
-        thing.style.backgroundColor = thing.value;
-        //Check if Color is already selected, if true
-        //set back to blank and display alert
-        if(checkColors(thing.value)){
-            thing.value = document.getElementById(".blank"); 
-            thing.style.backgroundColor = "";
-            alert("Cannot Select this Color: It is already Used");
-        }
-        //if not, add to array
-        else{
-            currentColors[x] = thing.value;
-        }
-        //Display Color for debugging purposes
-        console.log(thing.value);
-    }
-</script>
 <?php
         echo "<div id=\"table2\">";
         //Thad's jank ass code for table2
-            echo "<table border =\"1px\" style=\"width:100%\">";
+            echo "<table id=\"tableTwo\" border =\"1px\" style=\"width:100%\">";
             echo"<tr>";
             echo"<th>";
             $alph = 'A';
@@ -142,7 +158,7 @@
                         $counter++;
                     }
                     else{
-                    echo "<td></td>";
+                    echo "<td id=cell", $x ,",",$y - 1, ">&nbsp</td>";
                     }
                 }
                 echo"</tr>";
@@ -158,4 +174,68 @@
     echo "<br>";
     echo "<br>";
 ?>
-<html>
+<script>
+
+    //find all colored table cells in table two, change with the color parameter
+    //note: this function is called everytime a radio button is selected
+    function findAllColored(colorToChange){
+        //makes a nodelist of all elements in tabletwo with a style assigned
+        let allColored = document.querySelectorAll('#tableTwo [style]');
+       
+        //sorts through nodelist and changes color with colorToChange
+        for(i = 0; i < allColored.length; i++){
+            document.getElementById(allColored[i].id).style.backgroundColor = colorToChange;
+        }
+    }
+
+    //Need to get current color of the first drop down menu
+    //When clicked, get the id of the first drop down menu and make that the color
+    
+    function getCurrSelectedColor(){
+        //Get all input values
+        let currSelected;
+        var ele = document.getElementsByTagName('input');
+        for(i = 0; i < ele.length; i++) {
+            if(ele[i].type=="radio") {
+                if(ele[i].checked){
+                    //Return the currently selected elements id color
+                    currSelected = (ele[i].id);
+                }
+            }
+        }
+        //Get the index of the menu that is the same as the radio button 
+        const temp = currSelected.split(" ");
+        let currIndexofMenu = temp[1];
+        //Return the current color 
+        return document.getElementById("dropMenu " + currIndexofMenu).style.backgroundColor;
+    }
+    
+    // change background color of cell in table2
+    var globalColor = "red";
+    $("#tableTwo td").click(function(){
+        let currID = $(this).attr('id');
+        document.getElementById(currID).style.backgroundColor = getCurrSelectedColor();
+        globalColor = getCurrSelectedColor();
+    });    
+
+    //onclick event for radioButton
+    $("input:radio").change(function (){
+        var idIndex = this.id.split(' ');
+        var styleColor = document.getElementById("dropMenu " + idIndex[1]).style.backgroundColor;
+        // console.log(styleColor);
+
+        //function call to make the cells change color from radio button selected 
+        findAllColored(styleColor);
+
+    });
+
+    //Change first radioButton to have be selected by default
+    var firstButton = document.getElementById("radioButton 0");
+    firstButton.setAttribute("checked", "checked");
+    
+    
+
+
+
+</script>
+</html>
