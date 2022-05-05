@@ -166,18 +166,24 @@
     //Need to get current color of the first drop down menu
     //When clicked, get the id of the first drop down menu and make that the color
     function getCurrSelectedColor(){
+        //Get all input values
+        var ele = document.getElementsByTagName('input');
+        for(i = 0; i < ele.length; i++) {
+            if(ele[i].type="radio") {
+                if(ele[i].checked){
+                    console.log(ele[i].id);
+                }
+            }
+        }
         let dropColor = document.getElementById("dropMenu 0").style.backgroundColor;
-        console.log("working??");
         console.log(dropColor);
     }
     // change background color of cell in table2
     $("#tableTwo td").click(function(){
-        console.log("FUCK");
         let currID = $(this).attr('id');
         getCurrSelectedColor();
         //$(this).toggleClass("strip").siblings().removeClass();
     });    
-
 
     //onclick event for radioButton
     $("input:radio").change(function (){
@@ -193,9 +199,5 @@
     
     //Change the first 
     var red = document.getElementById("dropMenu 0");
-    red.setAttribute("style", "background-color: red;");
-    
-
-
 </script>
 </html>
