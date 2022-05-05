@@ -6,6 +6,8 @@
     <meta name="keywords" content="HTML5, Homepage"></meta>
     <meta name="description" content="Fuel Template"></meta>
     <style type="text/css"></style>
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+
     
     <?php echo Asset::css($css) ?>
     <title> <?php echo $title ?>  </title>
