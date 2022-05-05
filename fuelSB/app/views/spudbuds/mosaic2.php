@@ -133,7 +133,7 @@
             //End of drop down menu 
             echo "</select>
             </td>";
-            echo "<td style=\"width:80%\"></td>";
+            echo "<td id=\"table1Cell $x\", style=\"width:80%\"></td>";
             echo"</tr>";
         }
         echo"</table>";
@@ -152,7 +152,8 @@
             }
             echo"</tr>";
             $counter = 1;
-
+            $alphabet = array("A", "B", "C", "D", "E", "F", "G", "H", "I", "J", "K", "L", "M"
+            , "N", "O", "P", "Q", "R", "S", "T", "U", "V", "W", "X", "Y", "Z");
             for($x=0; $x <= $number -1; $x++){
                 echo "<tr>";
                 for($y=0; $y<=$number; $y++){
@@ -161,7 +162,7 @@
                         $counter++;
                     }
                     else{
-                    echo "<td id=cell", $x ,",",$y - 1, ">&nbsp</td>";
+                    echo "<td id=cell", $alphabet[$y-1] ,",",$x+1 , ">&nbsp</td>";
                     }
                 }
                 echo"</tr>";
@@ -208,24 +209,28 @@
         }
         //Get the index of the menu that is the same as the radio button 
         const temp = currSelected.split(" ");
-        let currIndexofMenu = temp[1];
+        return currIndexofMenu = temp[1];
         //Return the current color 
-        return document.getElementById("dropMenu " + currIndexofMenu).style.backgroundColor;
+        //return document.getElementById("dropMenu " + currIndexofMenu).style.backgroundColor;
     }
     
     // change background color of cell in table2
     var globalColor = "red";
     $("#tableTwo td").click(function(){
         let currID = $(this).attr('id');
+        let radioButtonID = getCurrSelectedColor();
+        var radioButtonObj = document.getElementById("dropMenu " + radioButtonID).style.backgroundColor;
+
         //If element already has background color -> remove the background color
-        if(document.getElementById(currID).style.backgroundColor == getCurrSelectedColor()){
+        if(document.getElementById(currID).style.backgroundColor == radioButtonObj){
             document.getElementById(currID).removeAttribute("style");
         }
         //Otherwise add background color
         else{
-            document.getElementById(currID).style.backgroundColor = getCurrSelectedColor();
+            document.getElementById(currID).style.backgroundColor = radioButtonObj;
         }
-        globalColor = getCurrSelectedColor();
+        document.getElementById("table1Cell " + radioButtonID).innerHTML += (currID + " ");
+        //cellObj.innerHTML += cellObj.innerHTML + currID + "";
     });    
 
     //onclick event for radioButton
@@ -235,7 +240,7 @@
         // console.log(styleColor);
 
         //function call to make the cells change color from radio button selected 
-        findAllColored(styleColor);
+        //findAllColored(styleColor);
 
     });
 
