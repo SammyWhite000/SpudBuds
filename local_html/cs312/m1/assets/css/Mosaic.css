@@ -90,23 +90,24 @@ main {
    /* margin-bottom: 40px; */
 }
 
-form {
-  margin: 2px;
-}
-
-.text_box:required {
-  background-color: white; /*Will need to change */ 
-}
-
 .num_of_cells {
-  display: none;
+  background-color: red;
+  color: black;
+  border: 2px double black;
+  padding: 5px;
+  width: 375px;
+  margin-bottom: 10px;
+  margin-top: 2px;
+  font-size: large;
 }
 
 .unique_colors {
-  display:none;
-}
-
-.num_of_cells:after {
-  display: block;
-  color: red;
+  background-color: red;
+  color: black;
+  border: 2px double black;
+  padding: 5px;
+  width: 400px;
+  margin-bottom: 10px;
+  margin-top: 2px;
+  font-size: large;
 }
