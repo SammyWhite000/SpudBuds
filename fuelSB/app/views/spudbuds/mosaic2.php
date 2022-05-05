@@ -15,7 +15,7 @@
     // Funciton to change color of drop down menu
     function updateFunc(x){
         //Get the current dropDown element by ID
-        let thing = document.getElementById(x);
+        let thing = document.getElementById("dropMenu " + x);
         //Add a style to it once it is selected
         thing.style.backgroundColor = thing.value;
         //Check if Color is already selected, if true
@@ -30,10 +30,9 @@
             currentColors[x] = thing.value;
         }
         //Display Color for debugging purposes
-        console.log(currentColors);
+        //console.log(currentColors);\
         console.log(thing.value);
     }
- 
 </script>
 <html>
     <div id="why">
@@ -107,7 +106,7 @@
             echo "<td style=\"width:20%\">";
 
             //Code for Drop down menu
-            echo "<select id=\"$x\" onchange=\"updateFunc($x)\">
+            echo "<select id=\"dropMenu $x\" onchange=\"updateFunc($x)\">
                 <option id=\"blank\"></option>";
                 //Loop through Colors arrays and make option in menu
                 foreach($colors as $colorVals){
@@ -115,7 +114,6 @@
                 }
                 //Add radio button to table 
                 echo"<input type=\"radio\" id=\"radioButton $x\" name=\"radioName\"";
-            
                 echo"<label for=\"radioButton\">Color selected for bottom table</label>";
             //End of drop down menu 
             echo "</select>
@@ -172,5 +170,25 @@
         console.log(currID);
         //$(this).toggleClass("strip").siblings().removeClass();
     });    
+
+
+    //onclick event for radioButton
+    $("input:radio").change(function (){
+        var idIndex = this.id.split(' ');
+        console.log(idIndex[1]);
+        var styleColor = document.getElementById("dropMenu " + idIndex[1]).style.backgroundColor;
+        console.log(styleColor);
+    });
+
+    //Change first radioButton to have be selected by default
+    var firstButton = document.getElementById("radioButton 0");
+    firstButton.setAttribute("checked", "checked");
+    
+    //Change the first 
+    var red = document.getElementById("dropMenu 0");
+    red.setAttribute("style", "background-color: red;");
+    
+
+
 </script>
 </html>
