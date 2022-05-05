@@ -90,4 +90,23 @@ main {
    /* margin-bottom: 40px; */
 }
 
+form {
+  margin: 2px;
+}
 
+.text_box:required {
+  background-color: white; /*Will need to change */ 
+}
+
+.num_of_cells {
+  display: none;
+}
+
+.unique_colors {
+  display:none;
+}
+
+.num_of_cells:after {
+  display: block;
+  color: red;
+}

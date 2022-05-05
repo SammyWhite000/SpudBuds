@@ -12,11 +12,23 @@
 
     <!-- Setup for text boxes and submit button -->
     <form method="get" action="mosaic2.php">
+
     <label for="number">Number of Rows/Cols (one number)</label>
-    <input type="text" name = 'number' id="number" required><br>
+
+    <div class="error">
+    <input class="text_box"  type="text" name = 'number' id="number" required><br>
+    <div class="num_of_cells"> Invalid number parameters. Must be in range 1-26</div>
+    </div>
+
     <label for="color">Number of Unique Colors</label>
-    <input type="text" name = 'color' id = 'color' required><br>
+
+    <div class="error">
+    <input class="text_box" type="text" name = 'color' id = 'color' required><br>
+    <div class="unique_colors"> Invalid rows/color parameters. Must be in range 1-10 </div>
+    </div>
+    
     <input type="submit" value="Submit">
+
     </form>
 
 <?php
@@ -123,7 +135,7 @@
 <?php
         echo "<div id=\"table2\">";
         //Thad's jank ass code for table2
-            echo "<table border =\"1px\" style=\"width:100%\">";
+        echo "<table border =\"1px\" style=\"width:100%\">"; //echo "<table border =\"1px\" style=\"width:100%\">";
             echo"<tr>";
             echo"<th>";
             $alph = 'A';
