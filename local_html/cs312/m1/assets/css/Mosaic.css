@@ -43,15 +43,15 @@ nav li a:hover {
 
 #why {
   text-align: center;
- 
   margin-left: auto;
   margin-right: auto;
+  margin-bottom: 15px;
   padding-left: 5px;
   padding-right: 5px;
   padding-top: 1px;
   padding-bottom: 1px;
   background-color: #297350;
-  display: block;
+ 
   width: 1100px;
 
   color: #F2B6A0;
@@ -60,6 +60,7 @@ nav li a:hover {
 h1 {
   color: #2C3740; /* dark greyish blue */
   text-align: center;
+  margin-bottom: 0px;
 }
 
 body {
