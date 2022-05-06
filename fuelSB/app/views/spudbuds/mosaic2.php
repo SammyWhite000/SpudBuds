@@ -180,17 +180,14 @@
 ?>
 <script>
 
-    //find all colored table cells in table two, change with the color parameter
-    //note: this function is called everytime a radio button is selected
-    function findAllColored(colorToChange){
-        //makes a nodelist of all elements in tabletwo with a style assigned
-        let allColored = document.querySelectorAll('#tableTwo [style]');
-       
-        //sorts through nodelist and changes color with colorToChange
-        for(i = 0; i < allColored.length; i++){
-            document.getElementById(allColored[i].id).style.backgroundColor = colorToChange;
-        }
+    function sortLex(str){
+        var arr = str.split(" ").filter(element =>element.trim());
+        arr.sort();
+        var sortedStr = arr.join(' ');
+    
+        return sortedStr;
     }
+
 
     //Need to get current color of the first drop down menu
     //When clicked, get the id of the first drop down menu and make that the color
@@ -215,7 +212,6 @@
     }
     
     // change background color of cell in table2
-    var globalColor = "red";
     $("#tableTwo td").click(function(){
         let currID = $(this).attr('id');
         let radioButtonID = getCurrSelectedColor();
@@ -229,7 +225,28 @@
         else{
             document.getElementById(currID).style.backgroundColor = radioButtonObj;
         }
-        document.getElementById("table1Cell " + radioButtonID).innerHTML += (currID + " ");
+
+        //where THAD LEAVING OFF
+
+        currIdParsed = currID.substring(4,7);
+        document.getElementById("table1Cell " + radioButtonID).innerHTML += (currIdParsed + " ");
+       
+        
+        var arrOfLex = document.getElementById("table1Cell " + radioButtonID).innerHTML;
+        // console.log(arrOfLex);
+        const sorted = sortLex(arrOfLex);
+        console.log(sorted);
+
+        //look at the console and it is the correct sorted lex order, however when you try 
+        //to do any of the following operations to insert it in the html it breaks
+        //I HAVe NO IDEA WHY
+
+        // document.getElementById("table1Cell " + radioButtonID).innerHTML= '';
+        // console.log(document.getElementById("table1Cell " + radioButtonID).innerHTML);
+        // document.getElementById("table1Cell " + radioButtonID).innerHTML = sorted; 
+
+
+        
         //cellObj.innerHTML += cellObj.innerHTML + currID + "";
     });    
 
@@ -238,9 +255,6 @@
         var idIndex = this.id.split(' ');
         var styleColor = document.getElementById("dropMenu " + idIndex[1]).style.backgroundColor;
         // console.log(styleColor);
-
-        //function call to make the cells change color from radio button selected 
-        //findAllColored(styleColor);
 
     });
 
