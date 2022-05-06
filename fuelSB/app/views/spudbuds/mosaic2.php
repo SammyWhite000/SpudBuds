@@ -42,7 +42,7 @@
         Start by inputing the number of columns and rows that you would like to generate. The mosaic table will always
         be have the same number of columns and rows. <br>
         Next, determine the number of unique colors that you would like to use. <br>
-        After the tables are generated, you will have the ability to print your table in grayscale. <br>
+        After the tables are generated, you will have the ability to print your table in grayscale but will not be able to change the colors afterwards. <br>
         </p>
     </div>
 
