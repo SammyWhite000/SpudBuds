@@ -228,11 +228,14 @@
                 //Replace the current cell that is selected with a space so it goes away in string
                 var ret = htmlStr.replace(currentCell,'');
                 document.getElementById("table1Cell " + x).innerHTML = ret;
-
             }
             
         }
         //Remove from list; Save current html inside table in a string
+        let htmlStr = document.getElementById("table1Cell " + radioButtonID).innerHTML;
+        //Replace the current cell that is selected with a space so it goes away in string
+        var ret = htmlStr.replace(currentCell,'');
+        document.getElementById("table1Cell " + radioButtonID).innerHTML = ret;    
     }
     
     // change background color of cell in table2
