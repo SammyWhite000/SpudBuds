@@ -49,7 +49,7 @@ main {
     margin-right: auto;
     background-color:  #297350; /* traditional green */
     color: #F2B6A0; /* skin pink */
-    font-family: sans-serif;
+    font-family: "Aphont", "BebasNeue-Regular", Arial, Helvetica, sans-serif;
 
     padding-top: 10px;
     padding-bottom: 10px;

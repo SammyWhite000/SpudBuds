@@ -41,6 +41,10 @@ nav li a:hover {
   margin-right: 15px;
 }
 
+main {
+  font-family: "Aphont", "BebasNeue-Regular", Arial, Helvetica, sans-serif;
+}
+
 #why {
   text-align: center;
   margin-left: auto;
