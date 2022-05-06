@@ -1,8 +1,10 @@
-/*
-color: #2C3740;  // dark greyish blue 
-color: #297350;  // traditional green  - background color
-color: #F2B6A0;  // skin pink - text color
+/* Current theme
+color: #2C3740;  // dark greyish blue - text color for h1 & footer
+color: #297350;  // traditional green  - background color for divs with text : nav ul, main 
+color: #F2B6A0;  // skin pink - text color : nav li a, main
+                  // background of footer
 color: #F2F2F2;  // white - Hover color
+color: #fffdd0 ; // very pale yellow - background color body
 */
 
 nav ul {
@@ -48,7 +50,7 @@ main {
   width: 1000px;
   margin-left:auto;
   margin-right: auto;
-  background-color:  #297350;  /* traditional green */
+  background-color:#297350; /* traditional green */
   color: #F2B6A0; /* skin pink */
   
   padding-right: 20px; 
@@ -76,6 +78,7 @@ footer{
   background-color:#F2B6A0; /* skin pink - text color */
   border-top-left-radius: 10px;
   border-top-right-radius: 10px;
+  font-family: "Aphont", "BebasNeue-Regular", Arial, Helvetica, sans-serif;
 }
 
 p img, p img, p img , p img {

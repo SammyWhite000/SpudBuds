@@ -1,9 +1,10 @@
 /* Current theme
-color: #2C3740;  // dark greyish blue 
-color: #28594B;  // forest green - footer text color
-color: #297350;  // traditional green  - background color
-color: #F2B6A0;  // skin pink - text color
+color: #2C3740;  // dark greyish blue - text color for h1, footer, submit, print
+color: #297350;  // traditional green  - background color for divs with text : nav ul, main, why
+color: #F2B6A0;  // skin pink - text color : nav li a, main 
+                  // background of footer
 color: #F2F2F2;  // white - Hover color
+color: #fffdd0 ; // very pale yellow - background color body
 */
 
 nav ul {
