@@ -162,7 +162,7 @@
                         $counter++;
                     }
                     else{
-                    echo "<td id=cell", $alphabet[$y-1] ,",",$x+1 , ">&nbsp</td>";
+                        echo "<td id=cell", $alphabet[$y-1] ,",",$x+1 , ">&nbsp</td>";
                     }
                 }
                 echo"</tr>";
@@ -213,44 +213,48 @@
         //Return the current color 
         //return document.getElementById("dropMenu " + currIndexofMenu).style.backgroundColor;
     }
+
+    function changeInnerHTML(currID, radioButtonID, currentCell){
+        var dropMenuColor = document.getElementById("dropMenu " + radioButtonID).style.backgroundColor;
+        
+        //Remove from list; Save current html inside table in a string
+        let htmlStr = document.getElementById("table1Cell " + radioButtonID).innerHTML;
+        //Replace the current cell that is selected with a space so it goes away in string
+        var ret = htmlStr.replace(currentCell,'');
+        document.getElementById("table1Cell " + radioButtonID).innerHTML = ret;
+    }
     
     // change background color of cell in table2
     var globalColor = "red";
     $("#tableTwo td").click(function(){
         let currID = $(this).attr('id');
         let radioButtonID = getCurrSelectedColor();
-        var radioButtonObj = document.getElementById("dropMenu " + radioButtonID).style.backgroundColor;
-
+        var dropMenuColor = document.getElementById("dropMenu " + radioButtonID).style.backgroundColor;
+        let xAndYCell = currID.substr(4).split(",");
+        let currentCell = String(xAndYCell[0]) + String(xAndYCell[1]);
         //If element already has background color -> remove the background color
-        if(document.getElementById(currID).style.backgroundColor == radioButtonObj){
+        if(document.getElementById(currID).style.backgroundColor == dropMenuColor){
+            //If background is alread set, remove styling so it goes away
             document.getElementById(currID).removeAttribute("style");
+            changeInnerHTML(currID, radioButtonID, currentCell);
         }
         //Otherwise add background color
         else{
-            document.getElementById(currID).style.backgroundColor = radioButtonObj;
+            console.log($(this).attr('backgroundColor'));
+            if($(this).attr('backgroundColor') != undefined){
+                console.log("WHY DOES THIS PASS");
+                changeInnerHTML(currID, radioButtonID, currentCell);
+            }
+            document.getElementById(currID).style.backgroundColor = dropMenuColor;
+            //Append current cell to end of html string
+            document.getElementById("table1Cell " + radioButtonID).innerHTML += (currentCell + " ");
         }
-        document.getElementById("table1Cell " + radioButtonID).innerHTML += (currID + " ");
-        //cellObj.innerHTML += cellObj.innerHTML + currID + "";
     });    
 
     //onclick event for radioButton
-    $("input:radio").change(function (){
-        var idIndex = this.id.split(' ');
-        var styleColor = document.getElementById("dropMenu " + idIndex[1]).style.backgroundColor;
-        // console.log(styleColor);
-
-        //function call to make the cells change color from radio button selected 
-        //findAllColored(styleColor);
-
-    });
-
-    //Change first radioButton to have be selected by default
-    var firstButton = document.getElementById("radioButton 0");
-    firstButton.setAttribute("checked", "checked");
-    
-    
-
-
-
+    // $("input:radio").change(function (){
+    //     var idIndex = this.id.split(' ');
+    //     var styleColor = document.getElementById("dropMenu " + idIndex[1]).style.backgroundColor;
+    // });
 </script>
 </html>
