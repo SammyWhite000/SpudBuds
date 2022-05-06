@@ -36,8 +36,16 @@ nav li a:hover {
   color:  #F2F2F2;  /* white */
 }
 
+#logo img {
+  height: 60px;
+  display: block;
+  margin-left: 15px;
+  margin-right: 15px;
+}
+
 h1 {
   color: #2C3740; /* dark greyish blue */
+  text-align: center;
   
 }
 
@@ -65,13 +73,6 @@ main {
     /*content becomes centered if page is wider than necessary */
 }
 
-#logo img {
-  height: 60px;
-  display: block;
-  margin-left: 15px;
-  margin-right: 15px;
-}
-
 footer{
   position: fixed;
   left: 0;
@@ -84,9 +85,5 @@ footer{
   background-color:#F2B6A0; /* skin pink - text color */
   border-top-left-radius: 10px;
   border-top-right-radius: 10px;
-}
-
-h1 {
-  text-align: center;
 }
 

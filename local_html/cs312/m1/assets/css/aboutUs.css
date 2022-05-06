@@ -36,9 +36,22 @@ nav li a {
 nav li a:hover {
   color:  #F2F2F2;  /* white */
 }
+
+  
+#logo img { /* sizing for the logo in the nav bar */
+  height: 60px;
+  display: block;
+  margin-left: 15px;
+  margin-right: 15px;
+}
   
 h1 {
   color: #2C3740; /* dark greyish blue */
+  text-align: center;
+}
+
+h2 { /* our name headers */
+  text-align: center;
 }
   
 body {
@@ -46,7 +59,7 @@ body {
   font-family: "Aphont", "BebasNeue-Regular", Arial, Helvetica, sans-serif;
 }
   
-main {
+main { 
   width: 1000px;
   margin-left:auto;
   margin-right: auto;
@@ -59,15 +72,21 @@ main {
   border-radius: 5px;
   font-family: "Aphont", "BebasNeue-Regular", Arial, Helvetica, sans-serif;
 }
-  
-#logo img {
-  height: 60px;
+
+p img, p img, p img , p img { /* Sizing for the profile pictures  */
+  height: 300px;
+  margin: 0 auto;
   display: block;
+  text-align: center;
+  border-radius: 5px;
+  
+}
+
+.hanging { /* so the long lines of text wraps under the line  */
   margin-left: 15px;
-  margin-right: 15px;
 }
   
-footer{
+footer {
   position: fixed;
   left: 0;
   bottom: 0;
@@ -79,28 +98,4 @@ footer{
   border-top-left-radius: 10px;
   border-top-right-radius: 10px;
   font-family: "Aphont", "BebasNeue-Regular", Arial, Helvetica, sans-serif;
-}
-
-p img, p img, p img , p img {
-  height: 300px;
-  margin: 0 auto;
-  display: block;
-  text-align: center;
-  border-radius: 5px;
-  
-}
-
-/*
-.extra_space {
-  padding-left: 65px;
-  padding-right: 30px;
-}
-*/
-
-h1, h2 {
-  text-align: center;
-}
-
-.hanging{
-  margin-left: 15px;
 }

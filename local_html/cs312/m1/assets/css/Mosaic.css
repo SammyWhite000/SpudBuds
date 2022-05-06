@@ -43,12 +43,29 @@ nav li a:hover {
   margin-right: 15px;
 }
 
-main {
+body {
+  background-color: #fffdd0 ; /*#fffff0*/
   font-family: "Aphont", "BebasNeue-Regular", Arial, Helvetica, sans-serif;
-  
 }
 
-#why {
+main {
+  width: 1000px;
+  margin-left:auto;
+  margin-right: auto;
+  background-color:  #297350; /* traditional green */
+  color: #F2B6A0; /* skin pink */
+  font-family: "Aphont", "BebasNeue-Regular", Arial, Helvetica, sans-serif;
+  margin-bottom: 50px; /*for the footer not to cover content */
+  /*content becomes centered if page is wider than necessary */
+}
+
+h1 {
+  color: #2C3740; /* dark greyish blue */
+  text-align: center;
+  margin-bottom: 0px;
+}
+
+#why { /* Div with instructions for the tables */
   text-align: center;
   margin-left: auto;
   margin-right: auto;
@@ -60,91 +77,21 @@ main {
   background-color: #297350;
   border-radius: 10px;
   width: 1100px;
-
   color: #F2B6A0;
-}
-
-h1 {
-  color: #2C3740; /* dark greyish blue */
-  text-align: center;
-  margin-bottom: 0px;
-}
-
-body {
-  background-color: #fffdd0 ; /*#fffff0*/
-}
-
-main {
-    width: 1000px;
-    margin-left:auto;
-    margin-right: auto;
-    background-color:  #297350; /* traditional green */
-    color: #F2B6A0; /* skin pink */
-    
-    margin-bottom: 50px; /*for the footer not to cover content */
-    /*content becomes centered if page is wider than necessary */
-}
- footer{
-    position: fixed;
-    /* padding-top: 2px; */
-    left: 0;
-    bottom: 0;
-    margin-top: 10px;
-    width: 100%;
-    height: 50px; /*Needs to match margin-bottom in main */
-    color: #2C3740; /* dark greyish blue */ 
-    text-align: center;
-    background-color:#F2B6A0; /* skin pink - text color */
-    border-top-left-radius: 10px;
-    border-top-right-radius: 10px;
-  
-}
- 
- #table1 {
-   /* background-color: white; */
-   
-   /*Separate table1 from table2 */
-   margin-top: 15px; 
-   /* margin-bottom: 40px; */
-}
-
-#tableTwo {
-  text-align: center;
 }
 
 form {
   text-align: center;
 }
 
-
-.text_box {
+.text_box { /* user input boxes for number of rows/cols and colors */
   border-radius: 5px;
   text-align: center;
   width: 20px;
   background-color: #F2B6A0;
 }
 
-
-#submit {
-  border-radius: 5px;
-  background-color: #F2B6A0;
-  color:#2c3740;
-  margin-top: 2px;
-  
-}
-
-#print {
-  border-radius: 5px;
-  background-color: #F2B6A0;
-  color:#2c3740;
-  margin-top: 2px;
-  display: block;
-  margin-left: auto;
-  margin-right:auto;
- 
-}
-
-.num_of_cells {
+.num_of_cells { /* Error message for invalid number of cells */
   background-color: red;
   color: black;
   border: 2px double black;
@@ -158,7 +105,7 @@ form {
   margin-right: auto;
 }
 
-.unique_colors {
+.unique_colors { /* Error message for invalid number of unique colors */
   background-color: red;
   color: black;
   border: 2px double black;
@@ -172,8 +119,19 @@ form {
   margin-right: auto;
 }
 
+#submit { /* design for form submit button */
+  border-radius: 5px;
+  background-color: #F2B6A0;
+  color:#2c3740;
+  margin-top: 2px;
+}
+ 
+#table1 {
+  /*Separate table1 from submit button */
+  margin-top: 15px; 
+}
 
-select {
+select { /* dropdown selectors for colors */
   background-color: #F2B6A0;
   border-radius: 10px;
 }
@@ -184,3 +142,33 @@ input[type="radio"]{
 
 }
 */
+
+#tableTwo {
+  text-align: center;
+}
+
+#print { /* design for print button */
+  border-radius: 5px;
+  background-color: #F2B6A0;
+  color:#2c3740;
+  margin-top: 2px;
+  display: block;
+  margin-left: auto;
+  margin-right:auto;
+ 
+}
+
+footer {
+  position: fixed;
+  /* padding-top: 2px; */
+  left: 0;
+  bottom: 0;
+  margin-top: 10px;
+  width: 100%;
+  height: 50px; /*Needs to match margin-bottom in main */
+  color: #2C3740; /* dark greyish blue */ 
+  text-align: center;
+  background-color:#F2B6A0; /* skin pink - text color */
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
