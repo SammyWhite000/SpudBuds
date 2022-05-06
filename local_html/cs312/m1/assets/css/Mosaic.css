@@ -105,6 +105,21 @@ main {
    /* margin-bottom: 40px; */
 }
 
+#submit {
+  border-radius: 5px;
+  background-color: #F2B6A0;
+  color:#2c3740;
+  margin-top: 2px;
+  
+}
+
+#print {
+  border-radius: 5px;
+  background-color: #F2B6A0;
+  color:#2c3740;
+  margin-top: 2px;
+}
+
 .num_of_cells {
   background-color: red;
   color: black;

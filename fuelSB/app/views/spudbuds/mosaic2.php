@@ -63,7 +63,7 @@
     <!--<div class="unique_colors"> Invalid rows/color parameters. Must be in range 1-10 </div> -->
     </div>
     
-    <input type="submit" value="Submit">
+    <input id="submit" type="submit" value="Submit">
 
     </form>
 
@@ -171,7 +171,7 @@
             echo"</table>";
             echo"</div>"; // End of "<div id=\"table2\">";
     }
-    echo"<button onClick=\"window.print()\">Print this page</button>";
+    echo"<button id=\"print\" onClick=\"window.print()\">Print this page</button>";
     echo "<br>";
     echo "<br>";
     echo "<br>";
