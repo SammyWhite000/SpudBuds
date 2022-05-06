@@ -12,6 +12,7 @@ nav ul {
   padding: 0;
   overflow: hidden;
   background-color:#297350; /* traditional green */
+  border-radius: 10px;
 }  
 
 nav li {
@@ -43,6 +44,7 @@ nav li a:hover {
 
 main {
   font-family: "Aphont", "BebasNeue-Regular", Arial, Helvetica, sans-serif;
+  
 }
 
 #why {
@@ -55,7 +57,7 @@ main {
   padding-top: 1px;
   padding-bottom: 1px;
   background-color: #297350;
- 
+  border-radius: 10px;
   width: 1100px;
 
   color: #F2B6A0;

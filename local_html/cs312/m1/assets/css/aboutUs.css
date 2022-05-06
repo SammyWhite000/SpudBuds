@@ -12,6 +12,8 @@ nav ul {
   padding: 0;
   overflow: hidden;
   background-color:#297350; /* traditional green */
+  /*font-family: "BebasNeue-Regular", "Aphont", Arial, Helvetica, sans-serif; */
+  border-radius: 10px;
 }
   
 nav li {
@@ -40,6 +42,7 @@ h1 {
   
 body {
   background-color: #fffdd0 ; /*#fffff0*/
+  font-family: "Aphont", "BebasNeue-Regular", Arial, Helvetica, sans-serif;
 }
   
 main {
@@ -48,10 +51,11 @@ main {
   margin-right: auto;
   background-color:  #297350;  /* traditional green */
   color: #F2B6A0; /* skin pink */
-  font-family: "Aphont", "BebasNeue-Regular", Arial, Helvetica, sans-serif;
+  
   padding-right: 20px; 
   margin-bottom: 50px; /*for the footer not to cover content */
   /*content becomes centered if page is wider than necessary */
+  border-radius: 5px;
 }
   
 #logo img {
