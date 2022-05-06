@@ -215,13 +215,24 @@
     }
 
     function changeInnerHTML(currID, radioButtonID, currentCell){
+        var numColors = "<?php echo $color; ?>";  
         var dropMenuColor = document.getElementById("dropMenu " + radioButtonID).style.backgroundColor;
-        
+        var previousColor = document.getElementById(currID).style.backgroundColor; 
+        //
+        for(let x = 0; x < numColors; x++){
+            if(document.getElementById("dropMenu " + x).style.backgroundColor == undefined){
+                continue;
+            }
+            else if(document.getElementById("dropMenu " + x).style.backgroundColor == previousColor){
+                let htmlStr = document.getElementById("table1Cell " + x).innerHTML;
+                //Replace the current cell that is selected with a space so it goes away in string
+                var ret = htmlStr.replace(currentCell,'');
+                document.getElementById("table1Cell " + x).innerHTML = ret;
+
+            }
+            
+        }
         //Remove from list; Save current html inside table in a string
-        let htmlStr = document.getElementById("table1Cell " + radioButtonID).innerHTML;
-        //Replace the current cell that is selected with a space so it goes away in string
-        var ret = htmlStr.replace(currentCell,'');
-        document.getElementById("table1Cell " + radioButtonID).innerHTML = ret;
     }
     
     // change background color of cell in table2
@@ -236,13 +247,13 @@
         if(document.getElementById(currID).style.backgroundColor == dropMenuColor){
             //If background is alread set, remove styling so it goes away
             document.getElementById(currID).removeAttribute("style");
+            //Remove the inner html 
             changeInnerHTML(currID, radioButtonID, currentCell);
         }
         //Otherwise add background color
         else{
             console.log($(this).attr('backgroundColor'));
-            if($(this).attr('backgroundColor') != undefined){
-                console.log("WHY DOES THIS PASS");
+            if($(this).attr('backgroundColor') == undefined){
                 changeInnerHTML(currID, radioButtonID, currentCell);
             }
             document.getElementById(currID).style.backgroundColor = dropMenuColor;
