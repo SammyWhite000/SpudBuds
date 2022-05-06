@@ -1,6 +1,5 @@
 /*
 color: #2C3740;  // dark greyish blue 
-color: #28594B;  // forest green - footer text color
 color: #297350;  // traditional green  - background color
 color: #F2B6A0;  // skin pink - text color
 color: #F2F2F2;  // white - Hover color
@@ -12,7 +11,7 @@ nav ul {
   padding: 0;
   overflow: hidden;
   background-color:#297350; /* traditional green */
-  /*font-family: "BebasNeue-Regular", "Aphont", Arial, Helvetica, sans-serif; */
+  
   border-radius: 10px;
 }
   
@@ -56,6 +55,7 @@ main {
   margin-bottom: 50px; /*for the footer not to cover content */
   /*content becomes centered if page is wider than necessary */
   border-radius: 5px;
+  font-family: "Aphont", "BebasNeue-Regular", Arial, Helvetica, sans-serif;
 }
   
 #logo img {
@@ -74,6 +74,8 @@ footer{
   color: #2C3740; /* dark greyish blue */ 
   text-align: center;
   background-color:#F2B6A0; /* skin pink - text color */
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
 }
 
 p img, p img, p img , p img {
@@ -81,6 +83,7 @@ p img, p img, p img , p img {
   margin: 0 auto;
   display: block;
   text-align: center;
+  border-radius: 5px;
   
 }
 

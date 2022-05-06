@@ -80,6 +80,8 @@ footer{
   color: #2C3740; /* dark greyish blue */ 
   text-align: center;
   background-color:#F2B6A0; /* skin pink - text color */
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
 }
 
 h1 {

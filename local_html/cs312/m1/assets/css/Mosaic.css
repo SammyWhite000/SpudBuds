@@ -1,4 +1,4 @@
-/*
+/* Current theme
 color: #2C3740;  // dark greyish blue 
 color: #28594B;  // forest green - footer text color
 color: #297350;  // traditional green  - background color
@@ -79,7 +79,7 @@ main {
     margin-right: auto;
     background-color:  #297350; /* traditional green */
     color: #F2B6A0; /* skin pink */
-    font-family: sans-serif;
+    
     margin-bottom: 50px; /*for the footer not to cover content */
     /*content becomes centered if page is wider than necessary */
 }
@@ -94,6 +94,8 @@ main {
     color: #2C3740; /* dark greyish blue */ 
     text-align: center;
     background-color:#F2B6A0; /* skin pink - text color */
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
   
 }
  
@@ -105,8 +107,20 @@ main {
    /* margin-bottom: 40px; */
 }
 
+#tableTwo {
+  text-align: center;
+}
+
 form {
   text-align: center;
+}
+
+
+.text_box {
+  border-radius: 5px;
+  text-align: center;
+  width: 20px;
+  background-color: #F2B6A0;
 }
 
 
@@ -156,3 +170,16 @@ form {
   margin-left: auto;
   margin-right: auto;
 }
+
+
+select {
+  background-color: #F2B6A0;
+  border-radius: 10px;
+}
+
+/*
+input[type="radio"]{
+  background-color: black;
+
+}
+*/
