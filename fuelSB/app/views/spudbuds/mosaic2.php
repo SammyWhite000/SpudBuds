@@ -171,7 +171,7 @@
             echo"</table>";
             echo"</div>"; // End of "<div id=\"table2\">";
     }
-    echo"<button id=\"print\" onClick=\"window.print()\">Print this page</button>";
+    echo"<button id=\"printButton\">Print this page</button>";
     echo "<br>";
     echo "<br>";
     echo "<br>";
@@ -298,6 +298,44 @@
     //Change first radioButton to have be selected by default
     var firstButton = document.getElementById("radioButton 0");
     firstButton.setAttribute("checked", "checked");
+
+        //print
+    $("#printButton").click(function(){
+        // $("#table1").removeAttribute("style");
+        // $("#table2").removeAttribute("style");
+        
+        $("#table1").toggleClass("grayScale");
+        $("#table2").toggleClass("grayScale");
+        openWin();
+    });
+    function openWin(){
+        src="https://code.jquery.com/jquery-3.5.1.min.js";
+        //document.getElementById('#table1').style.filter = grayscale(1);
+
+        var num = <?php echo "$color"; ?>;
+        console.log(num);
+
+        //Remove radio buttons
+        for(var i = 0; i < num; i ++){
+            var elem = document.getElementById("radioButton " + i);
+            elem.parentNode.removeChild(elem);
+        }
+
+        var myWindow = window.open();
+
+        var table1 = $("#table1").html();
+        var table2 = $("#table2").html();
+
+        var t1 = document.querySelector("#table1");
+        var t2 = document.querySelector("#table2");
+
+        //t1.toggleClass("grayScale");
+
+        myWindow.document.write(table1);
+        myWindow.document.write(table2);
+        
+        myWindow.print();
+    }
 
 </script>
 </html>
