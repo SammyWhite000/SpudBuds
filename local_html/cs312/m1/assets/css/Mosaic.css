@@ -147,7 +147,7 @@ input[type="radio"]{
   text-align: center;
 }
 
-#print { /* design for print button */
+#printButton { /* design for print button */
   border-radius: 5px;
   background-color: #F2B6A0;
   color:#2c3740;
