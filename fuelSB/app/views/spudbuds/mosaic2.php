@@ -129,7 +129,7 @@
                 }
                 //Add radio button to table 
                 echo"<input type=\"radio\" id=\"radioButton $x\" name=\"radioName\"";
-                echo"<label for=\"radioButton\">Color selected for bottom table</label>";
+                echo"<label id=\"radioButton $x\" for=\"radioButton\">Color selected for bottom table</label>";
             //End of drop down menu 
             echo "</select>
             </td>";
@@ -171,10 +171,13 @@
             echo"</table>";
             echo"</div>"; // End of "<div id=\"table2\">";
     }
-    echo"<button onClick=\"window.print()\">Print this page</button>";
+    // echo"<button onClick=\"window.print()\">Print this page</button>";
+    echo"<button id=\"print\" onClick=\"openWin()\">Print this page</button>";
+    
     echo "<br>";
     echo "<br>";
     echo "<br>";
+    
     echo "<br>";
     echo "<br>";
 ?>
@@ -183,7 +186,8 @@
     function sortLex(str){
         var arr = str.split(" ").filter(element =>element.trim());
         arr.sort();
-        var sortedStr = arr.join(' ');
+        let sortedStr = arr.join(' ');
+        // console.log(typeof sortedStr);
     
         return sortedStr;
     }
@@ -241,10 +245,14 @@
         //to do any of the following operations to insert it in the html it breaks
         //I HAVe NO IDEA WHY
 
-        // document.getElementById("table1Cell " + radioButtonID).innerHTML= '';
+        document.getElementById("table1Cell " + radioButtonID).innerHTML+= "sorted ";
         // console.log(document.getElementById("table1Cell " + radioButtonID).innerHTML);
-        // document.getElementById("table1Cell " + radioButtonID).innerHTML = sorted; 
-
+        // document.getElementById("table1Cell " + radioButtonID).innerHTML.replace("sorted"); 
+        // var inner = document.getElementById("table1Cell " + radioButtonID).innerHTML;
+        // inner = inner.replace("HRYYYYYYYY");
+        // console.log(inner); 
+       
+        
 
         
         //cellObj.innerHTML += cellObj.innerHTML + currID + "";
@@ -261,6 +269,35 @@
     //Change first radioButton to have be selected by default
     var firstButton = document.getElementById("radioButton 0");
     firstButton.setAttribute("checked", "checked");
+
+
+
+    //print
+    function openWin(){
+
+        //document.getElementById('#table1').style.filter = grayscale(1);
+
+        var num = <?php echo "$color"; ?>;
+        console.log(num);
+
+        for(var i = 0; i < num; i ++){
+            var elem = document.getElementById("radioButton " + i);
+            elem.parentNode.removeChild(elem);
+        }
+
+        var myWindow = window.open();
+
+        var table1 = $("#table1").html();
+        var table2 = $("#table2").html();
+
+        myWindow.document.write(table1);
+        myWindow.document.write(table2);
+        
+        myWindow.print();
+     
+
+       
+    }
     
     
 
